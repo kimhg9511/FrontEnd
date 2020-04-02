@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        div:nth-of-type(1){
+            background-color: lightgray;
+            padding: 20px;
+        }
+        div:nth-of-type(2){
+            background-color: lightskyblue;
+            padding: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <ul><h1>Block 요소의 특징</h1>
+        <li>항상 새로운 라인에서</li>
+        <li>화면 전체 크기</li>
+        <li>width, height, margin, padding 지정</li>
+        <li>inline 포함</li>
+        <li>div, h1~h6, p, ol, ul, li, hr, table, form</li>
+    </ul>
+    <div>
+        <h2>block h2</h2>
+        <p>(w, h) x -> width=100% height=auto</p>
+    </div>
+    <div>
+        <h2>block h2</h2>
+        <p>x width=300, h x -> width=300px, height=auto</p>
+    </div>
+    <!--
+       inline
+       - 새로운 라인에서 시작 안함
+       - content 크기만큼 너비를 차지한다.
+       - <span> (blank = 4px)</span> 
+       - inline안에는 block 요소를 가질 수 없다.
+       - ex) span, a, strong, img, br, input, select, button etc...
+    -->
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 14px;
+            text-align: center;
+        }
+        div{
+            /* font-size: 14px; */
+            /* font-size: 120%; */
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 2em; /* 14px * 2 = 28px */
+            background-color: rgba(255, 0, 0, 0.4); /* #ff0000 */
+        }
+        .box1{
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+        .box2{
+            background-color: rgba(255, 0, 0, 0.4);
+        }
+        .box3{
+            background-color: rgba(255, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Font size : 14px * 1.2em -> 16.8px
+        <div class="box2">
+            Font size : 16.8px * 1.2em -> 20.16px
+            <div class="box3">
+                Font size : 20.16px * 1.2em -> 24.192px
+            </div>        
+        </div>
+    </div>
+</body>
+</html>

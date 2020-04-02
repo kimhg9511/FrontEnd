@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>/html/style7.html</title>
+    <style>
+        p:first-of-type{color:red;}
+        p:last-of-type{color:blue;}
+        p:nth-of-type(2){color: green;}
+        p:nth-last-of-type(2){color: orange;}
+        p:last-child{background-color:yellow;}
+        /*
+        ~~child: 부모의 지정한 순번 자식이 셀렉터일 때
+        ~~of type: 부모의 자식셀렉터 중 지정된 순번
+        */
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <p>first p</p>
+    <p>second p</p>
+    <p>third p</p>
+    <p>fourth p</p>
+    <div>
+        <h1>heading 1</h1>
+        <p>first p</p>
+        <p>second p</p>
+        <p>third p</p>
+        <p>fourth p</p>
+    </div>
+</body>
+</html>
