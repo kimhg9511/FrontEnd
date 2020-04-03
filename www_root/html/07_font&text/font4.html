@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/html/07_font&text/font4.html</title>
+    <style>
+        body {
+            letter-spacing: 2px;
+            transition: letter-spacing 10s, color 10s;
+        }
+        h1 {text-align: center;}
+        h3 {text-align: right;}
+        p.left {text-align: left;}
+        p.justify {text-align: justify;}
+        a {
+            text-align: center; /* 적용되지 않음 */
+            text-decoration: none;
+        }
+        p:nth-of-type(1){ text-decoration: overline;}
+        p:nth-of-type(2){ text-decoration: line-through;}
+        p:nth-of-type(3){ text-decoration: underline;}
+        body:hover {
+            letter-spacing: -7.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#">text-decoration: none</a>
+    <p>text-decoration: overline</p>
+    <p>text-decoration: line-through</p>
+    <p>text-decoration: underline</p>
+
+    <h1>Lorem ipsum</h1>
+    <h3>2020.04.03</h3>
+
+    <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <a href="#">Reference</a>
+</body>
+</html>

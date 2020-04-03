@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/html/05_display/display3.html</title>
+    <style>
+        .visible{ visibility: visible;}
+        .hidden{ visibility: hidden;}
+
+        table, td{border: 1px solid black;}
+        .collapse{ visibility: collapse;}
+        /* .collpase{ visibility: hidden;} */
+        div, img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            background-color: lightskyblue;
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+        div:hover, img:hover{
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="visible">visiblity: visible</h1>
+    <h1 class="hidden">visiblity: hidden</h1>
+    <h1 style="display:none">visiblity: none</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr class="collapse">
+            <td>C</td>
+            <td>D</td>
+        </tr> 
+    </table>
+    <div>opacity: 0.5</div>
+    <img src="/img/dog/dog01.jpg" alt="dog01">
+</body>
+</html>
