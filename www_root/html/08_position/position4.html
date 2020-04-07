@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/html/08_position/position4.html</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .normal-box{
+            width: 100px;
+            height: 100px;
+        }
+        .absolute-box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .orange{
+            background-color: orange;
+            z-index: 1000;
+        }
+        .red{
+            background-color: red;
+            left: 50px; top: 50px;
+            z-index: 100;
+        }
+        .green{
+            background-color: green;
+            left: 100px; top: 100px;
+            z-index: 10;
+        }
+        .blue{
+            background-color: blue;
+            left: 150px; top: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal-box orange"></div>
+    <div class="absolute-box red"></div>
+    <div class="absolute-box green"></div>
+    <div class="absolute-box blue"></div>
+</body>
+</html>
