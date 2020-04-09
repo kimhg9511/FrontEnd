@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box{width:100px;height:100px;background:red;}
+    </style>
+</head>
+<body>
+    <button class="toggle">toggle</button>
+    <div class="box"></div>
+<script>
+    var box = document.querySelector('.box');
+    var toggleBtn = document.querySelector('.toggle');
+    var toggle = (function(){
+        var isShow = false;
+        return function(){
+            box.style.display = isShow ? 'block' : 'none';
+            isShow = !isShow;
+        }
+    }());
+
+    toggleBtn.onclick = toggle;
+</script>
+</body>
+</html>

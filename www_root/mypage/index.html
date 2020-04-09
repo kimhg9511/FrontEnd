@@ -11,10 +11,13 @@
         }
         body {
             font-family: sans-serif;
-            color: #58666e;
-            background-color: #f0f3f4;
+            color: #555;
+            background-color: #eee;
         }
-        li{
+        ul{
+            text-align: center;
+        }
+        li{      
             list-style: none;
         }
         a{
@@ -22,50 +25,84 @@
         }
         h1{ font-size: 1.8em; }
         header{
-            position: fixed;
+            position: absolute;
             top:0;
             width: 100%;
         }
         .logo{
+            display: inline-block;
             width: 100%;
-            text-align: center;
             line-height: 60px;
-            margin: 15px;
-
+            text-align: center;
+            padding: 15px;
         }
         .nav-bar{
+            background: -webkit-linear-gradient(-45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            color: #fff;
             width: 100%;
             text-align: center;
-            line-height: 60px;
-            margin: 15px;
+            line-height: 70px;
+            padding: 10px;
         }
-        .wrap{
-            position: relative;
-            top: 180px;
+        .nav-bar>ul>li{
+            display: inline;
+            line-height: 30px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+            text-shadow: 2px 1px 3px;
+            transition-timing-function: ease-out;
+            transition: all 1s;
+        }
+        .nav-bar>ul>li:hover{
+            text-shadow: 2px 1px 5px;
+            letter-spacing: 2px;
+        }
+        #content-wrap{
+            width: 100%;
+            margin-top: 180px;
+            /* margin: 180px auto 0; */
+            text-align: center;
+            font-size:0;
         }
         .carousel{
+            font-size: 16px;
             display: block;
             width: 100%;
             text-align: center;
-            margin: 15px;
+
+            line-height: 300px;
         }
         .card{
-            display: block;
-            float: left;
-            width:40%;
+            background-color: #ccc;
+            display: inline-block;
+            font-size: 16px;
+            width:48%;
             padding: 8px;
-            border: 1px solid black;
-            margin: 15px;
+            border-width: 0px 2px 2px 0px;
+            border-style: solid;
+            border-color: #333; 
+            border-radius: 10px;
+            /* margin: 15px auto; */
+            margin: 10px;
+        }
+        .card:nth-of-type(2n+1){
+            margin-left: 0;
+        }
+        .card:nth-of-type(n+2){
+            margin-top: 0;
         }
         .card>.card-header{
             padding: 5px 5px 4px 5px;
+            text-shadow: 2px 1px 3px;
             border-bottom: 1px dashed black;
         }
         .card>.card-body{
             padding: 5px;
         }
         footer{
-            position: fixed;
+            position: absolute;
             bottom: 0; right: 0;
             padding: 15px;
             text-align: right;
@@ -73,17 +110,21 @@
     </style>
 </head>
 <body>
-    <div class="wrap">
+    <div id="wrap">
         <header>
             <div class="logo">
-                this is logo.
+                <h1>this is logo.</h1>
             </div>
             <div class="nav-bar">
-                this is nav bar.
+                <ul>
+                    <li>dis is nav-item.</li>
+                    <li>dis is nav-item.</li>
+                    <li>dis is nav-item.</li>
+                </ul>
             </div>
         </header>
         <!-- end of header -->
-        <div class="content-wrap">
+        <div id="content-wrap">
             <div class="carousel">
                 this is carousel.
             </div>
@@ -127,7 +168,6 @@
     </div>
     <!-- end of wrap -->
 <script>
-
 </script>   
 </body>
 </html>
