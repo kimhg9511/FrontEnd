@@ -24,6 +24,9 @@
             text-decoration: none;
         }
         h1{ font-size: 1.8em; }
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 10px 5px;
+        }
         header{
             position: absolute;
             top:0;
@@ -37,26 +40,31 @@
             padding: 15px;
         }
         .nav-bar{
+            z-index: 2000;
             background: -webkit-linear-gradient(-45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 );
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.1);
             color: #fff;
             width: 100%;
             text-align: center;
-            line-height: 70px;
+            height: 90px;
             padding: 10px;
         }
-        .nav-bar>ul>li{
-            display: inline;
-            line-height: 30px;
-            border-bottom: 1px solid #ccc;
+        .nav-bar>.nav-items>.nav-item{
+            font-size: 1.3em;
+            display: inline-block;
             text-align: left;
-            text-shadow: 2px 1px 3px;
+            vertical-align: bottom;
+            text-shadow: 2px 1px 7px;
+            text-decoration: underline;
+            line-height: 90px;
+            margin: 0px 12px 0 12px ;
             transition-timing-function: ease-out;
             transition: all 1s;
         }
-        .nav-bar>ul>li:hover{
-            text-shadow: 2px 1px 5px;
+        .nav-bar>.nav-items>.nav-item:hover{
+            text-shadow: 2px 1px 15px;
             letter-spacing: 2px;
         }
         #content-wrap{
@@ -115,13 +123,13 @@
             <div class="logo">
                 <h1>this is logo.</h1>
             </div>
-            <div class="nav-bar">
-                <ul>
-                    <li>dis is nav-item.</li>
-                    <li>dis is nav-item.</li>
-                    <li>dis is nav-item.</li>
+            <nav class="nav-bar">
+                <ul class="nav-items">
+                    <li class="nav-item"><a>this is is nav-item.</a></li>
+                    <li class="nav-item"><a>this is is nav-item.</a></li>
+                    <li class="nav-item"><a>this is is nav-item.</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
         <!-- end of header -->
         <div id="content-wrap">
