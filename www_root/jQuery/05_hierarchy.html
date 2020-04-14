@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>child demo</title>
+    <style>
+        body {
+        font-size: 14px;
+        }
+    div, span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        background: #bfa;
+        float: left;
+        font-size: 14px;
+    }
+    div#small {
+        width: 60px;
+        height: 25px;
+        font-size: 12px;
+        background: #fab;
+    }
+    </style>
+    </head>
+<body>
+    <fieldset><legend>parent>child</legend>
+        <ul class="topnav">
+            <li>Item 1</li>
+            <li>Item 2
+            <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+                <li>Nested item 3</li>
+            </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+    </fieldset>
+    <fieldset><legend>prev+next</legend>
+        <form>
+            <label for="name">Name:</label>
+            <input name="name" id="name">
+            <fieldset>
+                <label for="newsletter">Newsletter:</label>
+                <input name="newsletter" id="newsletter">
+            </fieldset>
+        </form>
+        <input name="none">
+    </fieldset>
+    <fieldset><legend>siblings</legend>
+        <div>div (doesn't match since before #prev)</div>
+        <span id="prev">span#prev</span>
+        <div>div sibling</div>
+        <div>div sibling <div id="small">div niece</div></div>
+        <span>span sibling (not div)</span>
+        <div>div sibling</div> 
+    </fieldset>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    //parent > child
+    $('ul.topnav>li').css('border', '3px double red');
+    //prev + next
+    $('label+input').css('color','blue').val('Labeled!');
+    //prev ~ siblings
+    $('#prev~div').css('border', '3px groove blue');
+</script> 
+</body>
+</html>

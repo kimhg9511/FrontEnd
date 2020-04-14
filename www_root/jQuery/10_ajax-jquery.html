@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+$.ajax({
+    url:'10_users.json',
+    cache: false
+}).done(function(data,textStatus,jqXHR){
+    $('#content').html(data);
+}).fail(function(qjXHR, textStatus, errorThrown){
+    console.log("fail: ", jqXHR);
+}).always(function(data,textStatus,jqXHR){
+    console.log(data);
+});
+$.get('10_users.json',function(data){
+    console.log(typeof data);
+});
+$.getJSON('10_users.json',function(data){
+    console.log(typeof data);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="vacation">
+            <h2>Hawaiian Vacation</h2>
+            <button>Get Price</button>
+        </li>
+    </ul>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+<script>
+// 추가
+// append() : 선택 요소 닫는 태그 앞
+// prepend() : 선택 요소 여는 태그 뒤
+// before() : 선택 요소 앞
+// after() : 선택 요소 뒤
+// 제거
+// remove()
+    var price = $('<p>From $399.99</p>');
+    $('button').on('click',function(){
+        $('.vacation').append(price);
+        $('button').remove();    
+    });
+</script>
+</body>
+</html>

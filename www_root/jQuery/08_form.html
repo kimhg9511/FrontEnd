@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marked{
+            background-color: yellow;
+            border: 3px red solid;
+        }
+        input[type="checkbox"]{
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <input type="button" value="Input Button"><br>
+            <input type="checkbox" name="newsletter" id="" checked>
+            <input type="checkbox" name="newsletter" id="">
+            <input type="checkbox" name="newsletter" id="">
+            <input type="checkbox" name="newsletter" id="" checked>
+            <input type="checkbox" name="newsletter" id=""><br>
+            <div class="count2"></div>
+            <input type="file" name="" id=""><br>
+            <input type="hidden" name="" id=""><br>
+            <input type="password" name="" id=""><br>
+            <input type="radio" name="" id=""><br>
+            <input type="reset" value="초기화"><br>
+            <input type="submit" value="보내기"><br>
+            <input type="text" name="" id=""><br>
+            <select name="garden" multiple="multiple" id="">
+                <option value="">Flowers</option>
+                <option value="" selected="selected">Shrubs</option>
+                <option value="">Trees</option>
+                <option value="" selected="selected">Bushes</option>
+                <option value="">Grass</option>
+                <option value="">Dirt</option>
+            </select><br>
+            <div class="count3"></div>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <di id="click">클릭없이 클릭하기</di>
+        </fieldset>
+    </form>
+    <div class="count"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+<script>
+    var input = $(':button').addClass('marked');
+    var btnCount = input.length;
+    $('div.count').text(`Button found : ${btnCount}`);
+
+    var countChecked = function(){
+        var n = $('input:checked').length;
+        var str = n + 'item' + (n===1 ? ' is' : 's are') + ' checked!!'
+        $('div.count2').text(str);
+    }
+    $('input[type=checkbox]').on('click',countChecked).trigger(countChecked());
+    $('select').change(()=>{
+        var str = '| ';
+        $('select option:selected').each(function(){
+            str += $(this).text() + ' | ';
+        });
+        $('div.count3').text(str);
+    }).trigger('change');
+    $('#click').bind('click', function(){
+        alert('클릭');
+    }).trigger('click');
+
+</script>
+</body>
+</html>

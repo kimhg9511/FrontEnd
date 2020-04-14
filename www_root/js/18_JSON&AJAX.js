@@ -54,7 +54,7 @@ xhr.onreadystatechange = function(e){
         document.querySelector('#content').innerHTML = content;
         document.querySelector('#tbcontent').innerHTML = tbcontent;
     }else{
-        console.log('ERROR');   
+        console.log('ERROR' + xhr.status);
     }
 }
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foo {
+            color: blue;
+            background-color: skyblue;
+        }
+        .nth {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>eq, gt</legend>
+    <table border="1">
+        <tr>
+            <td>TD #0</td>
+            <td>TD #1</td>
+            <td>TD #2</td>
+        </tr>
+        <tr>
+            <td>TD #3</td>
+            <td>TD #4</td>
+            <td>TD #5</td>
+        </tr>
+        <tr>
+            <td>TD #6</td>
+            <td>TD #7</td>
+            <td>TD #8</td>
+        </tr>
+    </table>
+    <ul class="nav">
+        <li>List1, item1</li>
+        <li>List1, item2</li>
+        <li>List1, item3</li>
+    </ul>
+    <ul class="nav">
+        <li>List2, item1</li>
+        <li>List2, item2</li>
+        <li>List2, item3</li>
+    </ul>
+</fieldset>
+<fieldset><legend>header</legend>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+</fieldset>
+<fieldset><legend>not</legend>
+    <div><input type="checkbox" name="a" value=""><span>Mary</span></div>
+    <div><input type="checkbox" name="b" value=""><span>lcm</span></div>
+    <div><input type="checkbox" name="c" value="" checked="checked"><span>Peter</span></div>
+</fieldset>
+<fieldset><legend>attribute</legend>
+    <div><label for=""><input type="radio" name="newsletter" value="Hot Fuzz">name?</label></div>
+    <div><label for=""><input type="radio" name="newsletter" value="Cold Fusion">value?</label></div>
+    <div><label for=""><input type="radio" name="newsletter" value="Evil Plans"></label></div>
+</fieldset>
+<fieldset><legend>child</legend>
+<div>
+    <span>John</span>,
+    <b>Kim</b>,
+    <span>Adam</span>,
+    <b>Rafael</b>,
+    <span>Oleg</span>
+  </div>
+  <div>
+    <b>Dave</b>,
+    <span>Ann</span>
+  </div>
+  <div>
+    <i><span>Maurice</span></i>,
+    <span>Richard</span>,
+    <span>Ralph</span>,
+    <span>Jason</span>
+  </div>
+</fieldset>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    // :eq()
+    $('td:eq(2)').css('color','red');
+    $('ul.nav li:eq(1)').css('background-color','#ff0');
+    $('ul.nav').each(function(index){
+        console.log(this);
+        $(this).find('li:eq(1)').css('color','red');
+    })
+    // $('ul.nav li:nth-child(2)').css('color','blue');
+    $('li:eq(-2)').addClass('foo');
+
+    // :gt()
+    $('td:gt(4)').css('background-color','yellow');
+    $('td:gt(-2)').css('color','red');
+
+    // header
+    $(':header').css({background:'#ccc',color:'blue'});
+
+    // not
+    $('input:not(:checked)+span').css('background-color','yellow');
+    $('input:not(:checked)').attr('disabled','disabled');
+    $('input:not(:checked)').attr('checked','checked');
+
+    // attribute
+    $('input[value="Hot Fuzz"]').next().text('hot fuzz');
+
+    // child
+    $('span:nth-of-type(2)').append("<span> is 2nd sibling span</span>").addClass("nth");
+</script>
+</body>
+</html>
