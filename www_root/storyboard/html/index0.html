@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/index.css">
     <style>
-        
+
     </style>
 </head>
 <body>
     <header>
         <div id="logo">
-            this is logo.
+            <a href="index0.html" class="menu">게시판</a>
         </div>
         <div id="nav-bar">
             <ul>
-                <li><a href="login/login.html">Login</a></li>
-                <li><a href="join/join.html">회원가입</a></li>
+                <li><a href="login/login.html" class="menu">Login</a></li>
+                <li><a href="join/join.html" class="menu">회원가입</a></li>
+                <li><a href="index0.html" class="menu">게시판</a></li>
             </ul>
         </div>
     </header>
@@ -33,6 +33,20 @@
                     <th>조 회</th>
                 </tr>
                 <tr>
+                    <td>3</td>
+                    <td class ="table-contents"><a href="board/list.html">게시판 글입니다 3</a></td>
+                    <td>김현겸</td>
+                    <td>2020/04/16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class ="table-contents"><a href="board/list.html">게시판 글입니다 2</a></td>
+                    <td>김현겸</td>
+                    <td>2020/04/16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
                     <td>1</td>
                     <td class ="table-contents"><a href="board/list.html">게시판 글입니다 1</a></td>
                     <td>김현겸</td>
@@ -40,10 +54,12 @@
                     <td>0</td>
                 </tr>
                 <tr>
-                    <td colspan="5">1</td>
+                    <th colspan="5">1</th>
                 </tr>
             </table>
-            <input type="button" value="글쓰기" onclick="location.href = 'board/write.html'">
+            <div class="button">
+                <input type="button" value="글쓰기" onclick="location.href = 'login/login.html'">
+            </div>
         </div>
     </div>
     <footer>

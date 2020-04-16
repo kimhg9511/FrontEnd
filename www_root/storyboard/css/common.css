@@ -1,12 +1,19 @@
+@font-face{
+    font-family: 'NanumGothic';
+    src: url("../img/NanumGothicCoding.ttf") format("truetype");
+}
+@font-face{
+    font-family: 'NanumBrush';
+    src: url("../img/NanumBrush.ttf") format("truetype");
+}
+/* element */
 *{
+    font-family: NanumGothic;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 14px;
     color: #333;
-    background-color: #eee;
-}
-h1,h2,h3,h4,h5,h6{
     background-color: #fff;
 }
 li {
@@ -15,36 +22,55 @@ li {
 a{
     text-decoration: none;
 }
-input{
-    background-color: #fff;
+h1{
+    font-family: "NanumBrush";
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-bottom: 30px;
+  
 }
+h2{
+    font-size: 1.3em;
+}
+/* header */
 header{
     position: absolute;
     top: 0;
     width: 100%;
-    display: block;
-    line-height: 60px;
 }
 #logo{
     float: left;
     width: 20%;
     text-align: center;
-    border: 1px solid #aaa;
     margin: 10px;
+}
+#logo>a{
+    font-size: 2.5em;
+    font-family: "NanumBrush";
 }
 #nav-bar{
     float: right;
-    width: 40%;
     margin: 10px;
 }
+#nav-bar>ul{
+    position: relative;
+    bottom: 0;
+}
 #nav-bar>ul>li{
+    line-height: 14px;
     padding:5px;
     float: left;
-    /* border-right: solid 1px; */
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: skyblue;
+    border-radius: 5px;
+    margin: 5px;
 }
-#nav-bar>ul>li>a:hover{
+.menu:hover{
     font-weight: bold;
 }
+/* content */
 #content-wrap{
     width: 100%;
     position: relative;
@@ -55,19 +81,22 @@ header{
     display: block;
     clear: both;
 }
+/* table */
 #table{
-    width: 70%;        
+    width: 80%;        
     margin: 10px auto;    
 }
 table{
     width: 100%;
-    margin: 1px;
     text-align: center;
-    border: 1px solid black;
 }
 th,td{
-    border: 1px solid black;
     padding: 5px;
+}
+th{
+    font-size: 1.2em;
+    border-bottom: 2px solid skyblue;
+    border-top: 2px solid skyblue;
 }
 .table-contents{
     width:50%;
@@ -75,12 +104,51 @@ th,td{
 td:nth-of-type(2){
     text-align: left;
 }
+tr:nth-of-type(2n-1)>td{
+    background-color: #eee;
+}
+tr:nth-of-type(2n-1)>td *{
+    background-color: #eee;
+}
+/* align center */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* form */
+.form input[type="text"]{
+    color: #aaa;
+    border-width: 0 2px 2px 0;
+    border-color: skyblue;
+    border-radius: 5px;
+}
+.form input[type="password"]{
+    border-width: 0 2px 2px 0;
+    border-color: skyblue;
+    border-radius: 5px;
+}
+.button{
+    text-align: right;
+}
+.button input[type="button"]{
+    color: #fff;
+    font-weight: bold;    
+    background-color: skyblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+/* footer */
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #ddd;
-    border: 2px solid #aaa;
+}
+footer>*{
+    background-color: #eee;
 }
 footer>div{
     padding: 5px;

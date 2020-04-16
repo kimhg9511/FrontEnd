@@ -3,44 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/board.css">
     <title>Document</title>
 </head>
     <style>
-        h1{
-            text-align: center;
-            font-size: 1.5em;
-        }
-        .write{
-            width: 100%;
-        }
-        p{
-            display: inline-block;
-            width: 10%;
-            position: relative;
-            margin: 1px;
-        }
-        textarea{
-            width:100%
-        }
-        .button{
-            text-align: center;
-        }
-
     </style>
 <body>
-    <div class="write">
+    <div class="write form">
         <h1>게시판 글쓰기</h1>
-        <p>작성자</p> <input type="text"><br>
-        <p>E-mail</p> <input type="text"><br>
-        <p>홈페이지</p> <input type="text"><br>
-        <p>제목</p> <input type="text"><br>
-        <p>내용</p> <textarea name="" id="" cols="30" rows="5"></textarea><br>
-        <p>비밀번호</p> <input type="text"><br>
+        <h2>작 성 자</h2>:<input type="text"><br>
+        <h2>E-mail</h2>:<input type="text"><br>
+        <h2>홈페이지</h2>:<input type="text"><br>
+        <h2>제 목</h2>:<input type="text"><br>
+        <h2>내 용</h2><textarea name="" id="" cols="30" rows="20"></textarea><br>
+        <div class="tail">
+            <h2>비밀번호</h2>:<input type="password"><br> 
+        </div>
     </div>
-    <hr>
     <div class="button">
-        <input type="button" value="등록" onclick="location.href='../index0.html'">
-        <input type="button" value="뒤로" onclick="location.href='../index0.html'">
+        <input type="button" value="등록" onclick="location.href='../index1.html'">
+        <input type="button" value="뒤로" onclick="location.href='../index1.html'">
     </div>
 </body>
 </html>
