@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <span class="app">메시지: {{msg}}</span><br> -->
+    <span class="app" v-once>다시는 변경하지 않습니다: {{msg}}</span>
+    <!-- <p id="app2">Using mustaches: {{ rawHtml }}</p> -->
+    <p id="app2">Using v-html directive: <span v-html="rawHtml"></span></p>
+    <div v-bind:id="dynamicId"></div>
+    <button v-bind:disabled="isButtonDisabled">Button</button>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '.app',
+        data:{
+            msg: 'hi?'
+        }
+    })
+    var app2 = new Vue({
+        el: '#app2',
+        data: {
+            rawHtml: '<span style="color:red">This should be red</span>'
+        }
+    })
+</script>
+</body>
+</html>

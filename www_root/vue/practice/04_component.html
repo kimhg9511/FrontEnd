@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="example">
+        <my-component></my-component>
+    </div>
+    <div id="example-2">
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+        <child2 message="안녕하세요!"></child2>
+        <child3 my-message="안녕하세요@@"></child3>
+    </div>
+    <div>
+        <input v-model="parentMsg"><br>
+        <child :my-message="parentMsg"></child>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    // Vue.component('my-component',{
+    //     //options...
+    //     template: '<div>사용자 정의 컴포넌트 입니다!</div>'
+    // })
+    // new Vue({
+    //     el: '#example'
+    //     //options...
+    // })
+    var Child = {
+        template: '<div>사용자 정의 컴포넌트 입니다!</div>'
+    }
+    new Vue({
+        el: '#example',
+        components: {
+            'my-component': Child
+        }
+    })
+    // var data = { counter: 0 }
+    Vue.component('simple-counter',{
+        template: '<button v-on:click="counter +=1">{{ counter }}</button>',
+        data: function() {
+            return {
+                counter: 0
+            }
+        }
+    })
+    Vue.component('child2',{
+        props: ['message'],
+        template: '<span>{{ message }}</span>'
+    })
+    Vue.component('child3',{
+        props: ['myMessage'],
+        template: '<span>{{ myMessage }}</span>'
+    })
+    new Vue({
+        el: '#example-2'
+    })
+
+</script>
+</body>
+</html>

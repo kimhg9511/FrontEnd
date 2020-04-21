@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            마우스를 올려보세요
+        </span>
+    </div>
+    <div id="app-3">
+        <p v-if="seen">이제 나를 볼 수 있어요</p>
+    </div>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">{{todo.text}}</li>
+        </ol>
+    </div>
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">메시지 뒤집기</button>
+    </div>
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+    <div id="app-7">
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    // 1.Vue Hello
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello, Vue!'
+        }
+    })
+    // 2.v-bind
+    var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: '이 페이지는 ' + new Date() + '에 로드 되었습니다'
+        }
+    })
+    // 3.Vue if
+    var app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true
+        }
+    })
+    // 4.Vue for
+    var app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: 'JavaScript 배우기' },
+                { text: 'Vue 배우기' },
+                { text: '만들기' }
+            ]
+        }
+    })
+    // 5.Vue event
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: 'Hello, Vue.js!'
+        },
+        methods: {
+            reverseMessage: function(){
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+    // 6.Two-way binding
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'hello, Vue!'
+        }
+    })
+    // 7. component
+    Vue.component('todo-item',{
+        props: ['todo'],
+        template: '<li>{{ todo.text }}</li>'
+    })
+    var app7 = new Vue({
+        el: '#app-7',
+        data: {
+            groceryList: [
+                { id: 0, text: 'Vegetables' },
+                { id: 1, text: 'Cheese' },
+                { id: 2, text: 'Whatever else humans are supposed to eat' },
+            ]
+        }
+    })
+
+</script>
+</body>
+</html>

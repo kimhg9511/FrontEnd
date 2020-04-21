@@ -9,15 +9,16 @@ $('input[type="text"]').on('focus',function(){
 });
 
 $('#login').on('click',function(){
-    var id = $('#uid').val();
-    var pw = $('#upw').val();
+    var id = $('#uid');
+    var pw = $('#upw');
 
-    if(id.length === 0){
+    if(id.val().length === 0 || id.val() === id[0].defaultValue){
         alert("아이디는 필수 입력 입니다.")
-    } else if(pw.length === 0){
+        id.focus();
+    } else if(pw.val().length === 0 || pw.val() === pw[0].defaultValue){
         alert("비밀번호는 필수 입력 입니다.")
+        pw.focus();
     } else{
         location.href = '../index1.html';
     }
-    location.href = '../index1.html';
 })

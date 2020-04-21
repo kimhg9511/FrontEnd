@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{foo}}</p>
+        <button v-on:click="foo = 'baz'">Change it</button>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    // 1.Basic
+    var data = { a: 1 }
+    var vm = new Vue({
+        data: data
+    })
+    console.log(vm.a === data.a);
+    vm.a = 2
+    console.log(data.a);
+    data.a = 3
+    console.log(vm.a);
+    vm.b = 'hi'; // 화면이 갱신되지 않음: 인스턴스가 생성될 때 존재하지 않았으므로..
+    // 2. Object freeze
+    var obj = {
+        foo: 'bar'
+    }
+    Object.freeze(obj)
+    new Vue({
+        el:'#app',
+        data: obj
+    })
+    new Vue({
+        data: {
+            a: 1
+        },
+        created: function(){
+            console.log('a is: ' + this.a );
+        }
+    })
+</script>
+</body>
+</html>

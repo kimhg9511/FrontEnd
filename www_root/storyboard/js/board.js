@@ -16,12 +16,16 @@ $('input[type="text"]').on('focus',function(){
 $('#regist').on('click',function(){
     if($('#writer').val().length === 0){
         alert('작성자는 필수 입력입니다.');
+        $('#writer').focus();
     }else if($('#btitle').val().length === 0){
         alert('제목은 필수 입력입니다.');
+        $('#btitle').focus()
     }else if($('#bcontent').val().length ===0){
         alert('내용은 필수 입력입니다.');
+        $('#bcontent').focus()
     }else if($('#upw').val().length ===0){
         alert('비밀번호는 필수 입력입니다.')
+        $('#upw').focus()
     }else{
         location.href = '../index1.html';
     }
@@ -29,12 +33,16 @@ $('#regist').on('click',function(){
 $('#update').on('click',function(){
     if($('#writer').val().length === 0){
         alert('작성자는 필수 입력입니다.');
+        $('#writer').focus()
     }else if($('#btitle').val().length === 0){
         alert('제목은 필수 입력입니다.');
+        $('#btitle').focus()
     }else if($('#bcontent').val().length ===0){
         alert('내용은 필수 입력입니다.');
+        $('#bcontent').focus()
     }else if($('#upw').val().length ===0){
         alert('비밀번호는 필수 입력입니다.')
+        $('#upw').focus()
     }else{
         location.href = 'list.html';
     }
@@ -45,7 +53,10 @@ $('#reset').on('click',function(){
 $('#delete').on('click',function(){
     if($('#upw').val().length === 0){
         alert("비밀번호를 입력하세요.");
+        $('#upw').focus()
     } else{
-        location.href = '../index1.html'
+        if(confirm("삭제하시겠습니까?")){
+            location.href = '../index1.html'
+        }
     }
 })
