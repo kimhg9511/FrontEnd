@@ -1,5 +1,5 @@
 const carouselSlide = document.querySelector('.carousel-main');
-var carouselImages = document.querySelectorAll('.carousel-main .carousel-item');
+let carouselImages = document.querySelectorAll('.carousel-main .carousel-item');
 const prevBtn = document.querySelector('#carousel-prev');
 const nextBtn = document.querySelector('#carousel-next');
 let counter = 1;
@@ -7,12 +7,12 @@ const elem = document.createElement('div');
 const content = document.createTextNode(carouselImages[0].innerHTML);
 elem.appendChild(content);
 elem.className = 'carousel-item last';
-var first = elem;
+let first = elem;
 carouselSlide.appendChild(first);
 carouselImages = document.querySelectorAll('.carousel-main .carousel-item');
-
 const size = carouselImages[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
 // Buttons
 nextBtn.addEventListener('click', ()=> {
     if(counter >= carouselImages.length) return;
@@ -21,7 +21,6 @@ nextBtn.addEventListener('click', ()=> {
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 });
-
 prevBtn.addEventListener('click', ()=> {
     if(counter <= 0) return;
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
@@ -42,3 +41,9 @@ carouselSlide.addEventListener('transitionend', () => {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
+// Auto slide.
+
+// Auto slide stopped when mouse cursor is on.
+
+// Auto slide restart.
