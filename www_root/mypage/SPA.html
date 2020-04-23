@@ -6,25 +6,396 @@
     <title>Mogo</title>
 </head>
 <style>
+    @font-face{
+    font-family: 'CopperGothicBR';
+    src: url("font/CopperplateGothicBoldRegular.ttf") format("truetype");
+    }
+    @font-face{
+    font-family: 'BrushScriptMTI';
+    src: url("font/BRUSHSCI.ttf") format("truetype");
+    }
+
     *{
         padding: 0;margin: 0;
         box-sizing: border-box;
-    }
-    header{
         text-align: center;
+    }
+    li{
+        list-style: none;
+    }
+    #wrap{
+        width: 480px;
+        margin: 0 auto;
+    }
+    h1{
+        font-weight: normal;
+        font-family: "BrushScriptMTI";
+    }
+    h2{
+        font-family: "CopperGothicBR";
+    }
+    h6{
+        color: #a6a6a6;
+    }
+    hr{
+        background-color: #fff;
+        border: none;
+        width: 10%;
+        height: 2px;
+        margin: 0 auto 5px;
+    }
+    hr.red{
+        background-color: #f38181;
+    }
+    /* header */
+    header{
+        color: #fff;
+        height: 250px;
+        background-image: url("img/mogo/mogo_header.png");
+        background-size: 480px;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header-main{
+        margin: 0 0 5px;
+    }
+    .learn{
+        border: 3px solid #fff ;
+        width: 150px;
+        margin: 0 auto 5px;
+    }
+    .slide>ol{
+        font-size: 0;
+    }
+    .slide>ol>li{
+        font-size: 16px;
+        width: 25%;
+        display: inline-block;
+    }
+    .slide .isfocus{
+        background-color: #fff;
+        height: 3px;
+    }
+    .slide .selected{
+        background-color: #f38181;
+    }
+    /* section */
+    .section{
+        color: #333;
+    }
+    .section:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    /* section-story */
+    .story>.image-card{
+        font-size: 0;
+        display: block;
+        float: left;
+        width:140px;
+        margin: 10px; 
+        background-color: #95e1d3;
+    }
+    .story>.image-card>img{
+        width: 100%;
+    }
+
+    .story>.image-card>.selected{
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+    /* section-statistics */
+    .statistics{
+        background-color: #95e1d3;
+        font-size: 0;
+    }
+    .statistics>span{
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        width: 20%;
+        margin: 15px 0;
+    }
+    /* section-services */
+    .services>.services-item{
+        width:33%;
+        height: 150px;
+        float:left;
+        padding: 5px;
+    }
+    /* section-design */
+    .design{
+        background-image: url("img/mogo/mogo_design-exam-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 280px;
+    }
+    .design>.design-exam{
+        position: relative;
+        height: 210px;
+    }
+    .design>.design-exam>.main-img{
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform:translate(-50%,0);
+        height: 100%;
+    }
+    .design>.design-exam>.sub-img{
+        z-index: 2;
+        position: absolute;
+        bottom: -15%;
+        left: 60%;
+        height: 70%;
+    }
+    /* section what we do */
+    .whatwedo>img{
+        font-size: 0;
+        width: 50%;
+        height: 240px;
+        float: left;
+        padding-right: 3%;
+    }
+    .dropdown{
+        width: 50%;
+        float:right
+    }
+    .dropdown>.drop-header{
+        text-align: left;
+        position: relative;
+        height: 40px;
+        border: 1px solid #e5e5e5;
+    }
+    .dropdown>.drop-header>img:nth-of-type(1){
+        position: absolute;
+        width: 15%;
+        padding: 5px;
+        margin-top: 2px;
+        left: 0;
+    }
+    .dropdown>.drop-header>span{
+        font-weight: bold;
+        position: absolute;
+        left: 15%;
+        line-height: 40px;
+    }
+    .dropdown>.drop-header>.toggle{
+        position: absolute;
+        width: 15%;
+        height: 20px;
+        margin: 10px 3px 10px 0;
+        right: 0;
+        background-image: url("img/mogo/mogo_drop-down.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .dropdown>.drop-body{
+        display: none;
+        height: 0px;
+        color: #b3b3b3;
+        text-align: left;
+
+        border: 1px solid #e5e5e5;
+        overflow: auto;
+    }
+    .dropdown.selected>.drop-header>.toggle{
+        background-image: url("img/mogo/mogo_drop-up.png");
+    }
+    .dropdown.selected>.drop-body{
+        display: block;
+        height: 120px;
+    }
+    /* section comment */
+    .comment{
+        text-align: left;
+        background-color: #f8f8f8;
+    }
+    .comment>img{
+        float: left;
+        width: 20%;
+        padding: 25px;
+        border: 2px solid #95e1d3;
+        margin: 5px;
+    }
+    .comment>h1,hr{
+        display: inline-block;
+    }
+    .comment>h1{
+        font-size: 1.4em;
     }
 </style>
 <body>
     <div id="wrap">
         <header>
-            welcom to mogo
+            <div class="logo">MoGo</div>
+            <div class="nav-bar">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICE</li>
+                    <li>WORK</li>
+                    <li>BLOG</li>
+                    <li>CONTACT</li>
+                    <li>(CART)</li>
+                    <li>(SEARCH)</li>
+                </ul>
+            </div>
+            <div class="header-main">
+                <h1>creative template.</h1>
+                <h2>welcome</h2>
+                <h2>to mogo.</h2>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="learn">LEARN MORE</div>
+            <div class="slide">
+                <ol>
+                    <li class="isfocus selected"></li>
+                    <li class="isfocus"></li>
+                    <li class="isfocus"></li>
+                    <li class="isfocus"></li>
+                </ol>
+                <ol>
+                    <li>INTRO</li>
+                    <li>WORK</li>
+                    <li>ABOUT</li>
+                    <li>CONTACTS</li>
+                </ol>
+            </div>
         </header>
+        <!-- end of header -->
         <div id="content-wrap">
-            contents.
+            <div class="section story">
+                <h1>What we do</h1>
+                <h2>STORY ABOUT US</h2>
+                <hr class="red">
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                <div class="image-card">
+                    <img src="img/mogo/mogo_story-img-1.png" alt="" class="selected">
+                </div>
+                <div class="image-card"><img src="img/mogo/mogo_story-img-2.png" alt=""></div>
+                <div class="image-card"><img src="img/mogo/mogo_story-img-3.png" alt=""></div>
+            </div>
+            <!-- end of story -->
+            <div class="section statistics">
+                <span class="project"><h2>42</h2>WEB DESIGN PROJECTS</span>
+                <span class="client"> <h2>123</h2>HAPPY CLIENT</span>
+                <span class="award">  <h2>15</h2>AWARD WINNER</span>
+                <span class="coffee"> <h2>99</h2>CUP OF COFFEE</span>
+                <span class="member"> <h2>24</h2>MEMBERS<br><br></span>
+            </div>
+            <!-- end of statistics -->
+            <div class="section services">
+                <h1>We work with</h1>
+                <h2>AMAZING SERVICES</h2>
+                <hr class="red">
+                <div class="services-item">
+                    <img src="img/mogo/mogo_photography.png" alt="">
+                    <h3>PHOTOGRAPHY</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="services-item">
+                    <img src="img/mogo/mogo_web-design.png" alt="">
+                    <h3>WEB DESIGN</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="services-item">
+                    <img src="img/mogo/mogo_creativity.png" alt="">
+                    <h3>CREATIVITY</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="services-item">
+                    <img src="img/mogo/mogo_seo.png" alt="">
+                    <h3>SEO</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="services-item">
+                    <img src="img/mogo/mogo_css-html.png" alt="">
+                    <h3>CSS/HTML</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="services-item">
+                    <img src="img/mogo/mogo_digital.png" alt="">
+                    <h3>DIGITAL</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+            </div>
+            <!-- end of services -->
+            <div class="section design">
+                <h1>For all devices</h1>
+                <h2>UNIQUE DESIGN</h2>
+                <hr class="red">
+                <div class="design-exam">
+                    <img src="img/mogo/mogo_main-img.png" alt="" class="main-img">
+                    <img src="img/mogo/mogo_sub-img.png" alt="" class="sub-img">
+                </div>
+            </div>
+            <!-- end of design -->
+            <div class="section whatwedo">
+                <h1>Service</h1>
+                <h2>WHAT WE DO</h2>
+                <hr class="red">
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                <img src="img/mogo/mogo_wwd.png" alt="">
+                <div class="dropdown selected">
+                    <div class="drop-header">
+                        <img src="img/mogo/mogo_photography.png" alt="">
+                        <span>PHOTOGRAPHY</span>
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="drop-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="drop-header">
+                        <img src="img/mogo/mogo_photography.png" alt="">
+                        <span>PHOTOGRAPHY</span>
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="drop-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="drop-header">
+                        <img src="img/mogo/mogo_photography.png" alt="">
+                        <span>PHOTOGRAPHY</span>
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="drop-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                </div>
+            </div>
+            <!-- end of whatwedo -->
+            <div class="section comment">
+                <img src="img/mogo/mogo_comment.png" alt="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
+                <hr class="red"><h1>Jon Doe</h1>
+            </div>
+            <div class="section meetourteam">
+                <h1>Who we are</h1>
+                <h2>MEET OUR TEAM</h2>
+                <hr class="red">
+
+            </div>
         </div>
+        <!-- end of content-wrap -->
         <footer>
             copyright.
         </footer>
+        <!-- end of footer -->
     </div>
 </body>
 </html>
