@@ -19,6 +19,7 @@ $('#login').on('click',function(){
         alert("비밀번호는 필수 입력 입니다.")
         pw.focus();
     } else{
-        location.href = '../index1.html';
+        // location.href = '../index1.html';
+        console.dir(document.loginform)
     }
 })
