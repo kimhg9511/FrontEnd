@@ -114,11 +114,15 @@
     .image-card>img{
         width: 100%;
     }
-
     .image-card>.selected{
         position: relative;
         top: -5px;
         left: -5px;
+    }
+    /* comment-card */
+    .comment-card>h3{
+        text-align: left;
+        line-height: 2.5em;
     }
     /* section-story */
 
@@ -142,6 +146,7 @@
         padding: 5px;
     }
     .services>.services-item>img{
+        height: 32px;
         margin: 0 auto;
     }
     /* section-design */
@@ -276,6 +281,12 @@
         width: 100%;
         float: left;
     }
+    .clientsay>.comment>hr{
+        display: block;
+        margin-top: 5px;
+    }
+    /* section our stories */
+
 </style>
 <body>
     <div id="wrap">
@@ -326,8 +337,12 @@
                 <div class="image-card">
                     <img src="img/mogo/mogo_story-img-1.png" alt="" class="selected">
                 </div>
-                <div class="image-card"><img src="img/mogo/mogo_story-img-2.png" alt=""></div>
-                <div class="image-card"><img src="img/mogo/mogo_story-img-3.png" alt=""></div>
+                <div class="image-card">
+                    <img src="img/mogo/mogo_story-img-2.png" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="img/mogo/mogo_story-img-3.png" alt="">
+                </div>
             </div>
             <!-- end of story -->
             <div class="section statistics">
@@ -446,6 +461,7 @@
                     <img src="img/mogo/mogo_logos.png" alt="">
                 </div>
             </div>
+            <!-- end of meetourteam -->
             <div class="section works">
                 <h1>What we do</h1>
                 <h2>SOME OF OUR WORK</h2>
@@ -465,44 +481,67 @@
                     </tr>
                 </table> 
             </div>
+            <!-- end of works -->
             <div class="section comment">
                 <img src="img/mogo/mogo_comment2.png" alt="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
                 <hr class="red"><h1>Jon Doe</h1>
             </div>
+            <!-- end of comment -->
             <div class="section clientsay">
                 <h1>Happy Clients</h1>
                 <h2>WHAT PEOPLE SAY</h2>
                 <hr class="red">
                 <div class="comment">
                     <img src="img/mogo/mogo_client1.png" alt="">
-                    <span>MATTHEW DIX</span>
-                    <span>Graphic Design</span>
+                    <h3>MATTHEW DIX</h3>
+                    <h4>Graphic Design</h4>
                     <hr class="red">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div class="comment">
                     <img src="img/mogo/mogo_client2.png" alt="">
-                    <span>NICK KARVOUNIS</span>
-                    <span>Graphic Design</span>
+                    <h3>NICK KARVOUNIS</h3>
+                    <h4>Graphic Design</h4>
                     <hr class="red">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div class="comment">
                     <img src="img/mogo/mogo_client3.png" alt="">
-                    <span>JAELYNN CASTILLO</span>
-                    <span>Graphic Design</span>
+                    <h3>JAELYNN CASTILLO</h3>
+                    <h4>Graphic Design</h4>
                     <hr class="red">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div class="comment">
                     <img src="img/mogo/mogo_client4.png" alt="">
-                    <span>MIKE PETRUCCI</span>
-                    <span>Graphic Design</span>
+                    <h3>MIKE PETRUCCI</h3>
+                    <h4>Graphic Design</h4>
                     <hr class="red">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
             </div>
+            <!-- end of clientsay -->
+            <div class="section ourstories">
+                <h1>Our stories</h1>
+                <h2>LATEST BLOG</h2>
+                <hr class="red">
+                <div class="comment-card">
+                    <img src="img/mogo/mogo_ourstories1.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet</h3>    
+                </div>
+                <div class="comment-card">
+                    <img src="img/mogo/mogo_ourstories2.png" alt="">
+                    <h3>consectetur adipiscing elit</h3>      
+                </div>
+                <div class="comment-card">
+                    <img src="img/mogo/mogo_ourstories3.png" alt="">
+                    <h3>sed do eiusmod tempor incididunt</h3>     
+                </div>
+            </div>
+            <!-- end of ourstories -->
+            <!-- end of openmap -->
+            <!-- end of community -->
         </div>
         <!-- end of content-wrap -->
         <footer>
