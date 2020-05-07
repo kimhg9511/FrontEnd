@@ -1,0 +1,488 @@
+@font-face{
+font-family: 'CopperGothicBR';
+src: url("font/CopperplateGothicBoldRegular.ttf") format("truetype");
+}
+@font-face{
+font-family: 'BrushScriptMTI';
+src: url("font/BRUSHSCI.ttf") format("truetype");
+}
+
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+#wrap{
+    width: 480px;
+    margin: 0 auto;
+}
+h1{
+    font-weight: normal;
+    font-family: "BrushScriptMTI";
+}
+h2{
+    font-family: "CopperGothicBR";
+}
+h4{
+    font-weight: normal;
+    font-style: italic;
+}
+h6{
+    color: #a6a6a6;
+}
+hr{
+    background-color: #fff;
+    border: none;
+    width: 10%;
+    margin: 0 auto 5px;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+hr.red{
+    height: 2px;
+    background-color: #f38181;
+}
+.inline{
+    display: inline-block;
+}
+hr.shadow{
+    background-color: #eee;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+}
+/* colors */
+.bg-f8{
+    background-color: #f8f8f8;
+}
+/* header */
+header{
+    color: #fff;
+    height: 250px;
+    background-image: url("img/mogo/mogo_header.png");
+    background-size: 480px;
+    background-repeat: no-repeat;
+}
+.logo{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.nav-bar{
+    display: none;
+}
+.header-main{
+    margin: 0 0 5px;
+}
+.learn{
+    border: 3px solid #fff ;
+    width: 150px;
+    margin: 0 auto 5px;
+}
+.slide>ol{
+    font-size: 0;
+}
+.slide>ol>li{
+    font-size: 16px;
+    width: 25%;
+    display: inline-block;
+}
+.slide .isfocus{
+    background-color: #fff;
+    height: 3px;
+}
+.slide .selected{
+    background-color: #f38181;
+}
+/* section */
+.section{
+    color: #333;
+    margin-bottom: 15px;
+}
+.section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* image-card */
+.image-card{
+    font-size: 0;
+    display: block;
+    float: left;
+    width:140px;
+    margin: 10px; 
+    background-color: #95e1d3;
+}
+.image-card>img{
+    width: 100%;
+}
+.image-card>.selected{
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+/* comment-card */
+
+.comment-card>h3{
+    text-align: left;
+    line-height: 2.5em;
+}
+.comment-card>span{
+    display: inline-block;
+    text-align: left;
+    line-height: 1.5em;
+    color: #888;
+    margin-bottom: 15px;
+}
+.comment-card>.replzone{
+    text-align: left;
+    color: #b3b3b3;
+    margin-bottom: 30px;
+}
+.comment-card>.replzone>span{
+    margin-left: 5px;
+    margin-right: 15px;
+}
+/* section-story */
+
+/* section-statistics */
+.statistics{
+    background-color: #95e1d3;
+    font-size: 0;
+}
+.statistics>span{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    width: 20%;
+    margin: 15px 0;
+}
+/* section-services */
+.services>.services-item{
+    width:33%;
+    height: 150px;
+    float:left;
+    padding: 5px;
+}
+.services>.services-item>img{
+    height: 32px;
+    margin: 0 auto;
+}
+/* section-design */
+.design{
+    background-image: url("img/mogo/mogo_design-exam-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 280px;
+}
+.design>.design-exam{
+    position: relative;
+    height: 210px;
+}
+.design>.design-exam>.main-img{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%,0);
+    height: 100%;
+}
+.design>.design-exam>.sub-img{
+    z-index: 2;
+    position: absolute;
+    bottom: -15%;
+    left: 60%;
+    height: 70%;
+}
+/* section what we do */
+.whatwedo>img{
+    font-size: 0;
+    width: 50%;
+    height: 240px;
+    float: left;
+    padding-right: 3%;
+}
+.dropdown{
+    width: 50%;
+    float:right
+}
+.dropdown>.drop-header{
+    text-align: left;
+    position: relative;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+}
+.dropdown>.drop-header>img:nth-of-type(1){
+    position: absolute;
+    width: 15%;
+    padding: 5px;
+    margin-top: 2px;
+    left: 0;
+}
+.dropdown>.drop-header>span{
+    font-weight: bold;
+    position: absolute;
+    left: 15%;
+    line-height: 40px;
+}
+.dropdown>.drop-header>.toggle{
+    position: absolute;
+    width: 15%;
+    height: 20px;
+    margin: 10px 3px 10px 0;
+    right: 0;
+    background-image: url("img/mogo/mogo_drop-down.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.dropdown>.drop-body{
+    display: none;
+    height: 0px;
+    color: #b3b3b3;
+    text-align: left;
+
+    border: 1px solid #e5e5e5;
+    overflow: auto;
+}
+.dropdown.selected>.drop-header>.toggle{
+    background-image: url("img/mogo/mogo_drop-up.png");
+}
+.dropdown.selected>.drop-body{
+    display: block;
+    height: 120px;
+}
+/* section comment */
+.comment *{
+    text-align: left;
+    color: #9f9f9f;
+    line-height: 1.5em;
+}
+.comment>.comment-image{
+    float: left;
+}
+.comment>.comment-image>.small{
+    margin: 30px;
+    width: 85px;
+    height: 85px;
+}
+.comment>.comment-image>.full{
+    width: 145px;
+    margin: 15px;
+}
+.comment>.comment-contents{
+    padding-top: 15px;
+    margin-left: 145px;
+    margin-right: 20px;
+}
+.comment h1{
+    display: inline;
+    line-height: 1.8em;
+    font-size: 1.4em;
+    margin-left: 10px;
+    color: #333;
+}
+.comment h3{
+    font-size: 1em;
+    color: #333;
+}
+.comment h4{
+    font-style: normal;
+    color: #646464;
+    margin-bottom: 10px;
+}
+img[src="img/mogo/mogo_comment.png"]{
+    padding: 25px;
+    border: 2px solid #95e1d3;
+}
+.carousel{
+    position: relative;
+}
+.carousel>img{
+    z-index: 1000;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel>img:nth-of-type(1){
+    left: 10px;
+}
+.carousel>img:nth-of-type(2){
+    right: 10px;
+}
+/* section meetourteam */
+/* section logos */
+.logos{
+    background-color: #f8f8f8;
+}
+.logos>img{
+    width: 100%;
+}
+/* section works */
+.works>table{
+    font-size: 0;
+    border-spacing: 0;
+    border-collapse: unset;
+}
+.works img{
+    width: 100%;
+}
+/* section clients say */
+.clientsay{
+    background-image: url("img/mogo/mogo_client-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.clientsay>.comment{
+    width: 100%;
+    float: left;
+}
+.clientsay>.comment>.comment-contents>hr{
+    margin: 0;
+}
+/* section our stories */
+.ourstories>.center{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.ourstories>.comment-card{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.attachparent{
+    position: relative;
+}
+.attachparent>.attachchild{
+    color: #fff;
+    background-color: #95e1d3;
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    bottom: 10px;
+    left: -10px;
+    padding-top: 10px;
+}
+.attachparent>.attachchild>b{
+    font-size: 25px;
+    line-height: 0.8em;
+}
+/* section open map */
+.openmap{
+    height: 150px;
+    background-image: url("img/mogo/mogo_map.png");
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    color:#f38181;
+    font-size: 18px;
+}
+.openmap>img{
+    margin-bottom: 8px;
+}
+.openmap>hr{
+    margin-top: 12px;
+}
+/* section sns */
+.sns{
+    text-align: left;
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.sns>h2{
+    font-size: 40px;
+    color: #b3b3b3;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sns>.followers{
+    display: inline-block;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.sns>.followers>h2{
+    letter-spacing: -1px;
+    font-size: 22px;
+    display: inline;
+    font-weight: bolder;
+}
+.sns>.replzone{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.sns>.replzone>img{
+    height: 16px;
+    margin-left: 8px;
+}
+.sns>.replzone>img:nth-of-type(1){
+    margin-left: 20px;
+}
+.sns>input{
+    height: 30px;
+}
+.sns>input[type="text"]{
+    width:50%;
+    border: 2px solid #e5e5e5;
+    padding-left: 8px;
+}
+.sns>input[type="text"]::placeholder{
+    margin-left: 5px;
+    text-align: left;
+    color: #e5e5e5;
+    font-style: italic;
+}
+.sns>input[type="button"]{
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #95e1d3;
+    width: 30%;
+}
+/* section blog */
+.blog>h2{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+.blog>.comment{
+    height: 130px;
+}
+.blog>.comment>.comment-contents{
+    padding-top: 25px;
+}
+/* section instagram */
+.instagram>h2{
+    text-align: left;
+    margin-bottom: 30px;
+}
+.instagram>table{
+    margin-bottom: 15px;
+}
+.instagram>span{
+    color: #717171;
+    float: left;
+    font-style: italic;
+}
+/* footer */
+footer{
+    font-size: 14px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+}
+footer>span{
+    color: #333;
+    font-weight: bold;
+}
+footer>.name{
+    color: #f38181;
+}

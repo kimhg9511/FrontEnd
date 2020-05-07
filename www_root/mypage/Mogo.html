@@ -3,291 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mogo.css">
     <title>Mogo</title>
 </head>
-<style>
-    @font-face{
-    font-family: 'CopperGothicBR';
-    src: url("font/CopperplateGothicBoldRegular.ttf") format("truetype");
-    }
-    @font-face{
-    font-family: 'BrushScriptMTI';
-    src: url("font/BRUSHSCI.ttf") format("truetype");
-    }
-
-    *{
-        padding: 0;margin: 0;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    li{
-        list-style: none;
-    }
-    #wrap{
-        width: 480px;
-        margin: 0 auto;
-    }
-    h1{
-        font-weight: normal;
-        font-family: "BrushScriptMTI";
-    }
-    h2{
-        font-family: "CopperGothicBR";
-    }
-    h6{
-        color: #a6a6a6;
-    }
-    hr{
-        background-color: #fff;
-        border: none;
-        width: 10%;
-        height: 2px;
-        margin: 0 auto 5px;
-    }
-    img{
-        display: block;
-    }
-    hr.red{
-        background-color: #f38181;
-    }
-    /* colors */
-    .bg-f8{
-        background-color: #f8f8f8;
-    }
-    /* header */
-    header{
-        color: #fff;
-        height: 250px;
-        background-image: url("img/mogo/mogo_header.png");
-        background-size: 480px;
-        background-repeat: no-repeat;
-    }
-    .logo{
-        font-size: 1.1em;
-        font-weight: bold;
-        padding: 5px 0;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .header-main{
-        margin: 0 0 5px;
-    }
-    .learn{
-        border: 3px solid #fff ;
-        width: 150px;
-        margin: 0 auto 5px;
-    }
-    .slide>ol{
-        font-size: 0;
-    }
-    .slide>ol>li{
-        font-size: 16px;
-        width: 25%;
-        display: inline-block;
-    }
-    .slide .isfocus{
-        background-color: #fff;
-        height: 3px;
-    }
-    .slide .selected{
-        background-color: #f38181;
-    }
-    /* section */
-    .section{
-        color: #333;
-    }
-    .section:after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    /* image-card */
-    .image-card{
-        font-size: 0;
-        display: block;
-        float: left;
-        width:140px;
-        margin: 10px; 
-        background-color: #95e1d3;
-    }
-    .image-card>img{
-        width: 100%;
-    }
-    .image-card>.selected{
-        position: relative;
-        top: -5px;
-        left: -5px;
-    }
-    /* comment-card */
-    .comment-card>h3{
-        text-align: left;
-        line-height: 2.5em;
-    }
-    /* section-story */
-
-    /* section-statistics */
-    .statistics{
-        background-color: #95e1d3;
-        font-size: 0;
-    }
-    .statistics>span{
-        font-size: 16px;
-        color: #fff;
-        display: inline-block;
-        width: 20%;
-        margin: 15px 0;
-    }
-    /* section-services */
-    .services>.services-item{
-        width:33%;
-        height: 150px;
-        float:left;
-        padding: 5px;
-    }
-    .services>.services-item>img{
-        height: 32px;
-        margin: 0 auto;
-    }
-    /* section-design */
-    .design{
-        background-image: url("img/mogo/mogo_design-exam-bg.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 280px;
-    }
-    .design>.design-exam{
-        position: relative;
-        height: 210px;
-    }
-    .design>.design-exam>.main-img{
-        z-index: 1;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform:translate(-50%,0);
-        height: 100%;
-    }
-    .design>.design-exam>.sub-img{
-        z-index: 2;
-        position: absolute;
-        bottom: -15%;
-        left: 60%;
-        height: 70%;
-    }
-    /* section what we do */
-    .whatwedo>img{
-        font-size: 0;
-        width: 50%;
-        height: 240px;
-        float: left;
-        padding-right: 3%;
-    }
-    .dropdown{
-        width: 50%;
-        float:right
-    }
-    .dropdown>.drop-header{
-        text-align: left;
-        position: relative;
-        height: 40px;
-        border: 1px solid #e5e5e5;
-    }
-    .dropdown>.drop-header>img:nth-of-type(1){
-        position: absolute;
-        width: 15%;
-        padding: 5px;
-        margin-top: 2px;
-        left: 0;
-    }
-    .dropdown>.drop-header>span{
-        font-weight: bold;
-        position: absolute;
-        left: 15%;
-        line-height: 40px;
-    }
-    .dropdown>.drop-header>.toggle{
-        position: absolute;
-        width: 15%;
-        height: 20px;
-        margin: 10px 3px 10px 0;
-        right: 0;
-        background-image: url("img/mogo/mogo_drop-down.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    .dropdown>.drop-body{
-        display: none;
-        height: 0px;
-        color: #b3b3b3;
-        text-align: left;
-
-        border: 1px solid #e5e5e5;
-        overflow: auto;
-    }
-    .dropdown.selected>.drop-header>.toggle{
-        background-image: url("img/mogo/mogo_drop-up.png");
-    }
-    .dropdown.selected>.drop-body{
-        display: block;
-        height: 120px;
-    }
-    /* section comment */
-    .comment{
-        text-align: left;
-    }
-    .comment.black{
-        background-color: #000;
-    }
-    .comment>img{
-        float: left;
-        width: 20%;
-        margin: 5px;
-    }
-    .comment>h1,.comment>hr{
-        display: inline-block;
-    }
-    .comment>h1{
-        font-size: 1.4em;
-    }
-    img[src="img/mogo/mogo_comment.png"]{
-        padding: 25px;
-        border: 2px solid #95e1d3;
-    }
-    /* section meetourteam */
-    /* section logos */
-    .logos{
-        background-color: #f8f8f8;
-    }
-    .logos>img{
-        width: 100%;
-    }
-    /* section works */
-    .works>table{
-        font-size: 0;
-        border-spacing: 0;
-        border-collapse: unset;
-    }
-    .works img{
-        width: 100%;
-    }
-    .clientsay{
-        background-image: url("img/mogo/mogo_client-bg.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-    /* section clients say */
-    .clientsay>.comment{
-        width: 100%;
-        float: left;
-    }
-    .clientsay>.comment>hr{
-        display: block;
-        margin-top: 5px;
-    }
-    /* section our stories */
-
-</style>
 <body>
     <div id="wrap">
         <header>
@@ -437,10 +155,16 @@
                 </div>
             </div>
             <!-- end of whatwedo -->
-            <div class="section comment bg-f8">
-                <img src="img/mogo/mogo_comment.png" alt="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
-                <hr class="red"><h1>Jon Doe</h1>
+            <div class="section comment bg-f8 carousel">
+                <img src="img/mogo/mogo_carousel-left.png" alt="">
+                <img src="img/mogo/mogo_carousel-right.png" alt="">
+                <div class="comment-image">
+                    <img src="img/mogo/mogo_comment.png" alt="" class="small">
+                </div>
+                <div class="comment-contents">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "<br>              
+                    <hr class="red inline"><h1>Jon Doe</h1>
+                </div>
             </div>
             <!-- end of comment -->
             <div class="section meetourteam">
@@ -483,9 +207,13 @@
             </div>
             <!-- end of works -->
             <div class="section comment">
-                <img src="img/mogo/mogo_comment2.png" alt="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
-                <hr class="red"><h1>Jon Doe</h1>
+                <div class="comment-image">
+                    <img src="img/mogo/mogo_comment2.png" alt="" class="full">
+                </div>
+                <div class="comment-contents">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "<br>
+                    <hr class="red inline"><h1>Joshua Earle</h1>
+                </div>
             </div>
             <!-- end of comment -->
             <div class="section clientsay">
@@ -493,32 +221,48 @@
                 <h2>WHAT PEOPLE SAY</h2>
                 <hr class="red">
                 <div class="comment">
-                    <img src="img/mogo/mogo_client1.png" alt="">
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_client1.png" alt="" class="small">
+                    </div>
+                    <div class="comment-contents">
                     <h3>MATTHEW DIX</h3>
                     <h4>Graphic Design</h4>
-                    <hr class="red">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <hr class="red">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
                 </div>
                 <div class="comment">
-                    <img src="img/mogo/mogo_client2.png" alt="">
-                    <h3>NICK KARVOUNIS</h3>
-                    <h4>Graphic Design</h4>
-                    <hr class="red">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_client2.png" alt="" class="small">
+                    </div>
+                    <div class="comment-contents">
+                        <h3>NICK KARVOUNIS</h3>
+                        <h4>Graphic Design</h4>
+                        <hr class="red">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
                 </div>
                 <div class="comment">
-                    <img src="img/mogo/mogo_client3.png" alt="">
+                    <div class="comment-image">
+                    <img src="img/mogo/mogo_client3.png" alt="" class="small">
+                    </div>
+                    <div class="comment-contents">
                     <h3>JAELYNN CASTILLO</h3>
                     <h4>Graphic Design</h4>
                     <hr class="red">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
                 </div>
                 <div class="comment">
-                    <img src="img/mogo/mogo_client4.png" alt="">
-                    <h3>MIKE PETRUCCI</h3>
-                    <h4>Graphic Design</h4>
-                    <hr class="red">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_client4.png" alt="" class="small">
+                    </div>
+                    <div class="comment-contents">
+                        <h3>MIKE PETRUCCI</h3>
+                        <h4>Graphic Design</h4>
+                        <hr class="red">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
                 </div>
             </div>
             <!-- end of clientsay -->
@@ -527,25 +271,147 @@
                 <h2>LATEST BLOG</h2>
                 <hr class="red">
                 <div class="comment-card">
-                    <img src="img/mogo/mogo_ourstories1.png" alt="">
-                    <h3>Lorem ipsum dolor sit amet</h3>    
+                    <div class="attachparent">
+                        <img src="img/mogo/mogo_ourstories1.png" alt="">
+                        <span class="attachchild">
+                            <b>15</b><br>
+                            Jan
+                        </span>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                    <hr class="shadow">
+                    <div class="replzone">
+                        <img src="img/mogo/mogo_view.png" alt="" class="inline"><span>1550</span>
+                        <img src="img/mogo/mogo_repl.png" alt=""
+                        class="inline"><span>98</span>
+                    </div>
                 </div>
                 <div class="comment-card">
-                    <img src="img/mogo/mogo_ourstories2.png" alt="">
-                    <h3>consectetur adipiscing elit</h3>      
+                    <div class="attachparent">
+                        <img src="img/mogo/mogo_ourstories2.png" alt="">
+                        <span class="attachchild">
+                            <b>14</b><br>
+                            Jan
+                        </span>
+                    </div>
+                    <h3>consectetur adipiscing elit</h3>  
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                    <hr class="shadow">
+                    <div class="replzone">
+                        <img src="img/mogo/mogo_view.png" alt="" class="inline"><span>1550</span>
+                        <img src="img/mogo/mogo_repl.png" alt=""
+                        class="inline"><span>98</span>
+                    </div>       
                 </div>
                 <div class="comment-card">
-                    <img src="img/mogo/mogo_ourstories3.png" alt="">
+                    <div class="attachparent">
+                        <img src="img/mogo/mogo_ourstories3.png" alt="">
+                        <span class="attachchild">
+                            <b>12</b><br>
+                            Jan
+                        </span>
+                    </div>
                     <h3>sed do eiusmod tempor incididunt</h3>     
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </span>
+                    <hr class="shadow">
+                    <div class="replzone">
+                        <img src="img/mogo/mogo_view.png" alt="" class="inline"><span>1550</span>
+                        <img src="img/mogo/mogo_repl.png" alt=""
+                        class="inline"><span>98</span>
+                    </div>
                 </div>
             </div>
             <!-- end of ourstories -->
+            <div class="section openmap">
+                <img src="img/mogo/mogo_mappoint.png" alt="">
+                <h2>open map</h2>
+                <hr class="red">
+            </div>
             <!-- end of openmap -->
+            <div class="section sns">
+                <h2>MoGo</h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<br>
+                <span class="followers"><h2>15k </h2>followers</span>
+                <hr class="shadow">
+                <div class="replzone">
+                    <i>Follow Us: </i>
+                    <img src="img/mogo/mogo_sns1.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns2.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns3.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns4.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns5.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns6.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns7.png" alt=""class = "inline">
+                    <img src="img/mogo/mogo_sns8.png" alt=""class = "inline">
+                </div>
+                <input type="text" placeholder="Your Email"><input type="button" value="SUBSCRIBE">
+            </div>
+            <!-- end of sns -->
+            <div class="section blog">
+                <h2>blogs</h2>
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_blog1.png" alt="" class="full">
+                    </div>
+                    <div class="comment-contents">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        Jan 9, 2016
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_blog2.png" alt="" class="full">
+                    </div>
+                    <div class="comment-contents">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        Jan 9, 2016
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="img/mogo/mogo_blog3.png" alt="" class="full">
+                    </div>
+                    <div class="comment-contents">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        Jan 9, 2016
+                    </div>
+                </div>
+            </div>
+            <!-- end of blog -->
+            <div class="section instagram">
+                <h2>INSTAGRAM</h2>
+                <table>
+                    <tr>
+                        <td><img src="img/mogo/mogo_insta1.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta2.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta3.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/mogo/mogo_insta4.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta5.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta6.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/mogo/mogo_insta7.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta8.png" alt=""></td>
+                        <td><img src="img/mogo/mogo_insta9.png" alt=""></td>
+                    </tr>
+                </table>
+                <span>view more photos</span>
+            </div>
+            <!-- end of instagram-->
             <!-- end of community -->
         </div>
         <!-- end of content-wrap -->
         <footer>
-            copyright.
+            <span>&copy;2016 MoGo free PSD template by </span><span class="name">Laaqiq</span>
         </footer>
         <!-- end of footer -->
     </div>
