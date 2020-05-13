@@ -1,70 +1,78 @@
+/* commons */
 @font-face{
 font-family: 'CopperGothicBR';
-src: url("font/CopperplateGothicBoldRegular.ttf") format("truetype");
+src: url("../font/CopperplateGothicBoldRegular.ttf") format("truetype");
 }
 @font-face{
 font-family: 'BrushScriptMTI';
-src: url("font/BRUSHSCI.ttf") format("truetype");
+src: url("../font/BRUSHSCI.ttf") format("truetype");
 }
-
 *{
-    padding: 0;margin: 0;
     box-sizing: border-box;
     text-align: center;
 }
-li{
-    list-style: none;
-}
-#wrap{
-    width: 480px;
-    margin: 0 auto;
-}
-h1{
-    font-weight: normal;
-    font-family: "BrushScriptMTI";
-}
-h2{
-    font-family: "CopperGothicBR";
-}
-h4{
-    font-weight: normal;
-    font-style: italic;
-}
-h6{
-    color: #a6a6a6;
-}
-hr{
-    background-color: #fff;
-    border: none;
-    width: 10%;
-    margin: 0 auto 5px;
+.inline{
+    display: inline-block;
 }
 img{
     display: block;
     margin: 0 auto;
 }
-hr.red{
-    height: 2px;
-    background-color: #f38181;
+/* colors */
+.white{
+    color: #ffffff;
 }
-.inline{
-    display: inline-block;
+.grey{
+    color: #999999;
+}
+.grey2{
+    color: #cccccc;
+}
+.bg-grey{
+    background-color: #f8f8f8;
+}
+.black{
+    color: #333333;
+}
+.yellow{
+    color: #fce38a;
+}
+.red{
+    color: #f38181;
+}
+.mint{
+    color: #95e1d3;
+}
+.bg-mint{
+    background-color: #95e1d3;
+}
+/* font-sizes*/
+.letter{
+    font-family: "BrushScriptMTI";
+}
+.guide{
+    font-family: "CopperGothicBR";
+}
+/* hr */
+hr.red{
+    border: none;
+    width: 10%;
+    margin: 0 auto 5px;
+    height: 2px;
 }
 hr.shadow{
-    background-color: #eee;
     width: 100%;
     height: 1px;
     margin-bottom: 15px;
 }
-/* colors */
-.bg-f8{
-    background-color: #f8f8f8;
+#wrap{
+    width: 480px;
+    margin: 0 auto;
 }
 /* header */
 header{
-    color: #fff;
     height: 250px;
-    background-image: url("img/mogo/mogo_header.png");
+    background-image: url("../img/mogo/mogo_header.png");
     background-size: 480px;
     background-repeat: no-repeat;
 }
@@ -93,15 +101,10 @@ header{
     display: inline-block;
 }
 .slide .isfocus{
-    background-color: #fff;
     height: 3px;
-}
-.slide .selected{
-    background-color: #f38181;
 }
 /* section */
 .section{
-    color: #333;
     margin-bottom: 15px;
 }
 .section:after{
@@ -116,7 +119,6 @@ header{
     float: left;
     width:140px;
     margin: 10px; 
-    background-color: #95e1d3;
 }
 .image-card>img{
     width: 100%;
@@ -136,12 +138,10 @@ header{
     display: inline-block;
     text-align: left;
     line-height: 1.5em;
-    color: #888;
     margin-bottom: 15px;
 }
 .comment-card>.replzone{
     text-align: left;
-    color: #b3b3b3;
     margin-bottom: 30px;
 }
 .comment-card>.replzone>span{
@@ -152,12 +152,10 @@ header{
 
 /* section-statistics */
 .statistics{
-    background-color: #95e1d3;
     font-size: 0;
 }
 .statistics>span{
     font-size: 16px;
-    color: #fff;
     display: inline-block;
     width: 20%;
     margin: 15px 0;
@@ -175,7 +173,7 @@ header{
 }
 /* section-design */
 .design{
-    background-image: url("img/mogo/mogo_design-exam-bg.png");
+    background-image: url("../img/mogo/mogo_design-exam-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 280px;
@@ -236,21 +234,20 @@ header{
     height: 20px;
     margin: 10px 3px 10px 0;
     right: 0;
-    background-image: url("img/mogo/mogo_drop-down.png");
+    background-image: url("../img/mogo/mogo_drop-down.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .dropdown>.drop-body{
     display: none;
     height: 0px;
-    color: #b3b3b3;
     text-align: left;
 
     border: 1px solid #e5e5e5;
     overflow: auto;
 }
 .dropdown.selected>.drop-header>.toggle{
-    background-image: url("img/mogo/mogo_drop-up.png");
+    background-image: url("../img/mogo/mogo_drop-up.png");
 }
 .dropdown.selected>.drop-body{
     display: block;
@@ -259,7 +256,6 @@ header{
 /* section comment */
 .comment *{
     text-align: left;
-    color: #9f9f9f;
     line-height: 1.5em;
 }
 .comment>.comment-image{
@@ -284,15 +280,12 @@ header{
     line-height: 1.8em;
     font-size: 1.4em;
     margin-left: 10px;
-    color: #333;
 }
 .comment h3{
     font-size: 1em;
-    color: #333;
 }
 .comment h4{
     font-style: normal;
-    color: #646464;
     margin-bottom: 10px;
 }
 img[src="img/mogo/mogo_comment.png"]{
@@ -316,9 +309,6 @@ img[src="img/mogo/mogo_comment.png"]{
 }
 /* section meetourteam */
 /* section logos */
-.logos{
-    background-color: #f8f8f8;
-}
 .logos>img{
     width: 100%;
 }
@@ -333,7 +323,7 @@ img[src="img/mogo/mogo_comment.png"]{
 }
 /* section clients say */
 .clientsay{
-    background-image: url("img/mogo/mogo_client-bg.png");
+    background-image: url("../img/mogo/mogo_client-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -358,8 +348,6 @@ img[src="img/mogo/mogo_comment.png"]{
     position: relative;
 }
 .attachparent>.attachchild{
-    color: #fff;
-    background-color: #95e1d3;
     display: inline-block;
     position: absolute;
     width: 50px;
@@ -375,10 +363,9 @@ img[src="img/mogo/mogo_comment.png"]{
 /* section open map */
 .openmap{
     height: 150px;
-    background-image: url("img/mogo/mogo_map.png");
+    background-image: url("../img/mogo/mogo_map.png");
     background-repeat: no-repeat;
     padding-top: 40px;
-    color:#f38181;
     font-size: 18px;
 }
 .openmap>img{
@@ -390,13 +377,11 @@ img[src="img/mogo/mogo_comment.png"]{
 /* section sns */
 .sns{
     text-align: left;
-    color: #999;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 .sns>h2{
     font-size: 40px;
-    color: #b3b3b3;
     text-align: left;
     font-weight: bolder;
     margin-top: 20px;
@@ -404,7 +389,6 @@ img[src="img/mogo/mogo_comment.png"]{
 }
 .sns>.followers{
     display: inline-block;
-    color: #333;
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -437,15 +421,12 @@ img[src="img/mogo/mogo_comment.png"]{
 .sns>input[type="text"]::placeholder{
     margin-left: 5px;
     text-align: left;
-    color: #e5e5e5;
     font-style: italic;
 }
 .sns>input[type="button"]{
     border: none;
-    color: white;
     font-size: 12px;
     font-weight: bold;
-    background-color: #95e1d3;
     width: 30%;
 }
 /* section blog */
@@ -469,7 +450,6 @@ img[src="img/mogo/mogo_comment.png"]{
     margin-bottom: 15px;
 }
 .instagram>span{
-    color: #717171;
     float: left;
     font-style: italic;
 }
@@ -480,9 +460,16 @@ footer{
     padding-top: 10px;
 }
 footer>span{
-    color: #333;
     font-weight: bold;
 }
 footer>.name{
-    color: #f38181;
+}
+
+/* for desktop */
+@media screen and (min-width: 1024px){
+#wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
 }
