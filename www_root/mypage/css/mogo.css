@@ -22,6 +22,9 @@ img{
 .white{
     color: #ffffff;
 }
+.bg-white{
+    background-color: #ffffff;
+}
 .grey{
     color: #999999;
 }
@@ -40,6 +43,9 @@ img{
 .red{
     color: #f38181;
 }
+.bg-red{
+    background-color: #f38181;
+}
 .mint{
     color: #95e1d3;
 }
@@ -54,54 +60,16 @@ img{
     font-family: "CopperGothicBR";
 }
 /* hr */
-hr.red{
+hr{
     border: none;
-    width: 10%;
-    margin: 0 auto 5px;
-    height: 2px;
 }
-hr.shadow{
-    width: 100%;
-    height: 1px;
-    margin-bottom: 15px;
+.divide{
+    width: 40px;
+    height: 2px;
 }
 #wrap{
     width: 480px;
     margin: 0 auto;
-}
-/* header */
-header{
-    height: 250px;
-    background-image: url("../img/mogo/mogo_header.png");
-    background-size: 480px;
-    background-repeat: no-repeat;
-}
-.logo{
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 5px 0;
-}
-.nav-bar{
-    display: none;
-}
-.header-main{
-    margin: 0 0 5px;
-}
-.learn{
-    border: 3px solid #fff ;
-    width: 150px;
-    margin: 0 auto 5px;
-}
-.slide>ol{
-    font-size: 0;
-}
-.slide>ol>li{
-    font-size: 16px;
-    width: 25%;
-    display: inline-block;
-}
-.slide .isfocus{
-    height: 3px;
 }
 /* section */
 .section{
@@ -472,4 +440,6 @@ footer>.name{
     margin: 0 auto;
 }
 
+
+/* end of desktop*/
 }

@@ -1,0 +1,11 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: 'KaushanScript';
+    src: url("../font/KaushanScript-Regular.ttf") format("truetype");
+}
+hr{
+    border: none;
+}
