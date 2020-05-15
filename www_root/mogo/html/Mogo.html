@@ -3,64 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/mogo.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/mogo_hardcording.css">
     <title>Mogo</title>
 </head>
 <body>
     <div id="wrap">
-        <header>
+        <header id="header">
             <div class="logo">MoGo</div>
             <div class="nav-bar">
-                <ul>
-                    <li>ABOUT</li>
-                    <li>SERVICE</li>
-                    <li>WORK</li>
-                    <li>BLOG</li>
-                    <li>CONTACT</li>
-                    <li>(CART)</li>
-                    <li>(SEARCH)</li>
+                <ul class="nav-item">
+                    <li class="nav-items selected">ABOUT</li>
+                    <li class="nav-items">SERVICE</li>
+                    <li class="nav-items">WORK</li>
+                    <li class="nav-items">BLOG</li>
+                    <li class="nav-items">CONTACT</li>
+                    <li class="nav-items">(CART)</li>
+                    <li class="nav-items">(SEARCH)</li>
                 </ul>
             </div>
-            <div class="header-main">
-                <h1>creative template.</h1>
-                <h2>welcome</h2>
-                <h2>to mogo.</h2>
+            <div class="creative-template">
+                Creative&nbsp;Template
             </div>
-            <div>
-                <hr>
-            </div>
-            <div class="learn">LEARN MORE</div>
+
+            <div class="welcome-to-mogo">
+                WELCOME<br>TO&nbsp;MOGO
+            </div>    
+            <hr class="underline">
+            <div class="learn-more">LEARN&nbsp;MORE</div>
             <div class="slide">
-                <ol>
-                    <li class="isfocus selected"></li>
-                    <li class="isfocus"></li>
-                    <li class="isfocus"></li>
-                    <li class="isfocus"></li>
-                </ol>
-                <ol>
-                    <li>INTRO</li>
-                    <li>WORK</li>
-                    <li>ABOUT</li>
-                    <li>CONTACTS</li>
-                </ol>
+                <ul class="slide-select">
+                    <li class="slide-bar"></li>
+                    <li class="slide-bar"></li>
+                    <li class="slide-bar"></li>
+                    <li class="slide-bar"></li>
+                    <li class="selected"></li>
+                </ul>
+                <ul class="slide-name">
+                    <li class="slide-items"><span class="number">01</span>INTRO</li>
+                    <li class="slide-items"><span class="number">02</span>WORK</li>
+                    <li class="slide-items"><span class="number">03</span>ABOUT</li>
+                    <li class="slide-items"><span class="number">04</span>CONTACTS</li>
+                </ul>
             </div>
         </header>
         <!-- end of header -->
         <div id="content-wrap">
-            <div class="section story">
-                <h1>What we do</h1>
-                <h2>STORY ABOUT US</h2>
-                <hr class="red">
-                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+            <div class="section whatwedo">
+                <span class="what-we-do">What&nbsp;we&nbsp;do</span><br>
+                <span class="story-about-us">STORY&nbsp;ABOUT&nbsp;US</span>
+                <hr class="underline">
+                <span class="contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
                 <div class="image-card">
-                    <img src="img/mogo/mogo_story-img-1.png" alt="" class="selected">
+                    <div class="selected">
+                        <span class="super-team">SUPER&nbsp;TEAM</span>
+                    </div>
                 </div>
                 <div class="image-card">
-                    <img src="img/mogo/mogo_story-img-2.png" alt="">
                 </div>
                 <div class="image-card">
-                    <img src="img/mogo/mogo_story-img-3.png" alt="">
                 </div>
             </div>
             <!-- end of story -->

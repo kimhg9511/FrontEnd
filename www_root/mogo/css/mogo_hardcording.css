@@ -1,0 +1,284 @@
+/* commons */
+@font-face{
+font-family: 'Montserrat';
+src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face{
+font-family: 'KaushanScript';
+src: url("../font/KaushanScript-Regular.ttf") format("truetype");
+}
+/* default width - 1920px */
+hr{
+    margin: 0;
+}
+ul{
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+#wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+/* section header */
+#header {
+    width: 1920px;
+    height: 1000px;
+    background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a);
+}
+.logo {
+    width: 86px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 23px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /**/
+    float: left;
+    margin-top: 28px;
+    margin-left: 362px;
+}
+.nav-item{
+    height: 10px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 358px;
+}
+.nav-items{
+    width: 60px;
+    height: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 10px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    display: inline-block;
+    margin: 0 27px;
+}
+.nav-items.selected {
+    height: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fce38a;
+}
+.SHOPPING-CART {
+width: 18px;
+height: 15px;
+background-color: #ffffff;
+}
+.creative-template {
+    width: 508px;
+    height: 87px;
+    font-family: KaushanScript;
+    font-size: 72px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    padding-top: 229px;
+    margin: 0 auto 42px;
+    line-height: 87px;
+}
+.welcome-to-mogo {
+    width: 802px;
+    height: 248px;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 124px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    margin: 0 auto 71px;
+}
+.underline {
+width: 60px;
+height: 3px;
+background-color: #ffffff;
+border: 0px;
+/**/
+margin: 0 auto 50px;
+}/* underline */
+.learn-more {
+width: 160px;
+height: 40px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 41px;
+letter-spacing: normal;
+text-align: center;
+color: #ffffff;
+/**/
+margin: 0 auto 157px;
+border: solid 3px #ffffff;
+}
+.slide{
+    text-align: center;
+}
+.slide-bar {
+width: 280px;
+height: 3px;
+background-color: #ffffff;
+/**/
+display: inline-block;
+margin: 0 15px 25px;
+}
+.slide-select{
+height: 3px;
+position: relative;
+}
+.slide-select>.selected {
+width: 70px;
+height: 3px;
+background-color: #f38181;
+/**/
+position: absolute;
+top: 0;
+left: 15px;
+}
+.slided-name{
+    height: 17px;
+}
+.slide-items {
+width: 280px;
+height: 17px;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #ffffff;
+/**/
+line-height: 17px;
+display: inline-block;
+margin: 0 15px;
+}
+.slide-items>.number {
+font-size: 24px;
+font-weight: bold;
+}
+/* end of header */
+/* section whatwedo */
+.whatwedo{
+    text-align: center;
+}
+.what-we-do {
+    width: 108px;
+    height: 23px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 91px auto 23px;
+  }
+  .story-about-us {
+    width: 268px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 40px;
+  }
+.whatwedo>.underline{
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto 47px;
+  }
+.whatwedo>.contents{
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    line-height: 19.5px;
+    margin: 0 auto 101px;
+  }
+  .USERS {
+    width: 32px;
+    height: 24px;
+    background-color: #ffffff;
+  }
+  .super-team {
+    width: 119px;
+    height: 14px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    line-height: 250px;
+    transform: translateY(17px);
+  }
+  .image-card {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;/* need to change */
+    display: inline-block;
+    margin: 0 15px 110px;
+    position: relative;
+  }
+  .image-card>.selected {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a);
+  }/* selected background */
