@@ -79,9 +79,9 @@ span{
     color: #fce38a;
 }
 .SHOPPING-CART {
-width: 18px;
-height: 15px;
-background-color: #ffffff;
+    width: 18px;
+    height: 15px;
+    background-color: #ffffff;
 }
 .creative-template {
     width: 508px;
@@ -115,83 +115,83 @@ background-color: #ffffff;
     margin: 0 auto 71px;
 }
 .underline {
-width: 60px;
-height: 3px;
-background-color: #ffffff;
-border: 0px;
-/**/
-margin: 0 auto 50px;
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    border: 0px;
+    /**/
+    margin: 0 auto 50px;
 }/* underline */
 .learn-more {
-width: 160px;
-height: 40px;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-line-height: 41px;
-letter-spacing: normal;
-text-align: center;
-color: #ffffff;
-/**/
-margin: 0 auto 157px;
-border: solid 3px #ffffff;
+    width: 160px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 41px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    margin: 0 auto 157px;
+    border: solid 3px #ffffff;
 }
 .slide{
     text-align: center;
 }
 .slide-bar {
-width: 280px;
-height: 3px;
-background-color: #ffffff;
-/**/
-display: inline-block;
-margin: 0 15px 25px;
+    width: 280px;
+    height: 3px;
+    background-color: #ffffff;
+    /**/
+    display: inline-block;
+    margin: 0 15px 25px;
 }
 .slide-select{
-height: 3px;
-position: relative;
+    height: 3px;
+    position: relative;
 }
 .slide-select>.selected {
-width: 70px;
-height: 3px;
-background-color: #f38181;
-/**/
-position: absolute;
-top: 0;
-left: 15px;
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    /**/
+    position: absolute;
+    top: 0;
+    left: 15px;
 }
 .slided-name{
     height: 17px;
 }
 .slide-items {
-width: 280px;
-height: 17px;
-font-family: Montserrat;
-font-size: 18px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: normal;
-letter-spacing: normal;
-text-align: left;
-color: #ffffff;
-/**/
-line-height: 17px;
-display: inline-block;
-margin: 0 15px;
+    width: 280px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /**/
+    line-height: 17px;
+    display: inline-block;
+    margin: 0 15px;
 }
 .slide-items>.number {
-font-size: 24px;
-font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 /* end of header */
 /* section whatwedo */
 .whatwedo{
     text-align: center;
 }
-.what-we-do {
+.whatwedo>.what-we-do {
     width: 108px;
     height: 23px;
     font-family: KaushanScript;
@@ -207,7 +207,7 @@ font-weight: bold;
     line-height: 23px;
     margin: 91px auto 23px;
   }
-  .story-about-us {
+.story-about-us {
     width: 268px;
     height: 23px;
     font-family: Montserrat;
@@ -222,13 +222,13 @@ font-weight: bold;
     /**/
     line-height: 23px;
     margin: 0 auto 40px;
-  }
+}
 .whatwedo>.underline{
     width: 60px;
     height: 3px;
     background-color: #f38181;
     margin: 0 auto 47px;
-  }
+}
 .whatwedo>.contents{
     width: 954px;
     height: 39px;
@@ -243,13 +243,13 @@ font-weight: bold;
     color: #999999;
     line-height: 19.5px;
     margin: 0 auto 101px;
-  }
-  .USERS {
+}
+.USERS {
     width: 32px;
     height: 24px;
     background-color: #ffffff;
-  }
-  .super-team {
+}
+.super-team {
     width: 119px;
     height: 14px;
     font-family: Montserrat;
@@ -264,16 +264,16 @@ font-weight: bold;
     /**/
     line-height: 250px;
     transform: translateY(17px);
-  }
-  .image-card {
+}
+.image-card {
     width: 380px;
     height: 250px;
     background-color: #95e1d3;/* need to change */
     display: inline-block;
     margin: 0 15px 110px;
     position: relative;
-  }
-  .image-card>.selected {
+}
+.image-card>.selected {
     width: 380px;
     height: 250px;
     background-color: #95e1d3;
@@ -281,4 +281,278 @@ font-weight: bold;
     top: -10px;
     left: -10px;
     background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a);
-  }/* selected background */
+}/* selected background */
+/* end of section whatwedo */
+/* section statistics */
+.section.statistics{
+    width: 1920px;
+    height: 270px;
+    background-color: #95e1d3;
+    text-align: center;
+}
+.statistic-number{
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    line-height: 52px;
+    margin: 89px auto 30px;
+}
+.statistic-items{
+    width: 240px;
+    height: 270px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    display: inline-block;
+    border-left: 1px solid #ffffff;
+}
+.statistic-items:last-of-type{
+    border-right: 1px solid #ffffff;
+}
+/* end of section statistics*/
+/* section we-work-with */
+.weworkwith{
+    text-align: center;
+}
+.we-work-with {
+    width: 130px;
+    height: 24px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 24px;
+    margin: 109px auto 22px;
+}
+.amazing-services {
+    width: 309px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 42px;
+}
+.weworkwith>.underline{
+    background-color: #f38181;
+    margin: 0 auto 66px;
+}
+.services-wrap{
+    width: 1250px;
+    margin: 0 auto;
+}
+.services-items{
+    width: 333px;
+    height: 70px;
+    margin: 0 34px;
+    display: inline-block;
+    margin-bottom: 99px;
+}
+.services-items>img{ 
+    width: 32px;
+    height: 31px;
+    background-color: #95e1d3;
+    float: left;
+}
+.services-title{
+    width: 110px;
+    height: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    /**/
+    /* line-height: 10px; */
+    float: left;
+    margin-left: 27px;
+    /* margin-bottom: 20px; */
+}
+.services-content {
+    width: 300px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    margin-left: 59px;
+    margin-top: -2px;
+  }
+/* end of section we-work-with */
+/* section for all devices */
+.foralldevices {
+    width: 1920px;
+    height: 850px;
+    background-color: #eee;/*need to change */
+    margin-top: 23px;
+    text-align: center;
+  }  
+.for-all-devices {
+    width: 131px;
+    height: 24px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    margin: 109px auto 22px;
+    line-height: 24px;
+  }
+  .unique-design {
+    width: 245px;
+    height: 27px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 27px;
+    margin: 0 auto 38px;
+  }
+  .foralldevices>.underline{
+      background-color: #f38181;
+      margin: 0 auto 51px;
+  }
+  .design-main {
+    width: 469px;
+    height: 576px;
+    /**/
+    background-color: #95e1d3;
+    margin: 0 auto;
+    position: relative;
+  }
+  .design-attached {
+    width: 199px;
+    height: 427px;
+    background-color: #f38181;
+    position: absolute;
+    top: 197px;
+    left: 392px;
+  }
+/* end of section for all devices */
+/* section service */
+.service-wrap{
+    margin: 0 360px;
+}
+.service {
+    width: 72px;
+    height: 20px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 20px;
+    margin: 112px auto 23px;
+  }
+.service-wrap>.what-we-do {
+    width: 209px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 42px;
+  }
+.service-wrap>.underline{
+    background-color: #f38181;
+    margin: 0 auto 46px;
+}
+.service-wrap>.comment{
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    /**/
+    margin: 0 auto 92px;
+  }
+.service-wrap>img {
+    width: 570px;
+    height: 380px;
+    background-color: #95e1d3;/* need to change */
+    float: left;
+    margin-right: 50px;
+  }
+  .Rectangle-9 {
+    width: 600px;
+    height: 60px;
+    border: solid 1px #e5e5e5;
+    background-color: #000000;
+
+  }
+  .Rectangle-9-copy {
+    width: 600px;
+    height: 181px;
+    border: solid 1px #e5e5e5;
+    background-color: #000000;
+  }
+  
+/* end of section service */
+
+
