@@ -1,7 +1,13 @@
 /* commons */
 @font-face{
 font-family: 'Montserrat';
+src: url("../font/Montserrat-Regular.ttf") format("truetype");
+
+}
+@font-face{
+font-family: 'Montserrat';
 src: url("../font/Montserrat-Bold.ttf") format("truetype");
+font-weight: bold;
 }
 @font-face{
 font-family: 'KaushanScript';
@@ -881,7 +887,7 @@ span{
   }
   .whatwedo_works>.temp-wrap{
       font-size: 0;
-      margin-bottom: 140px;
+      margin-bottom: 60px;
   }
   .whatwedo_works>.temp-wrap>.temp-layer {
     width: 480px;
@@ -892,3 +898,544 @@ span{
     box-sizing: border-box;
   }
 /* end of section whatwedo_works */
+/* section happy clients */
+.happyclients{
+  width: 1920px;
+  height: 900px;
+  background-color: #d9d9d9;
+  margin-top: 90px;
+}
+.happy-clients {
+  width: 134px;
+  height: 30px;
+  font-family: KaushanScript;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  line-height: 30px;
+  padding-top: 109px;
+  margin: 0 auto 16px;
+}
+.what-people-say {
+  width: 294px;
+  height: 23px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  line-height: 23px;
+  margin: 0 auto 42px;
+}
+.happyclients .underline{
+  background-color: #f38181;
+  margin: 0 auto 87px;
+}
+.client-card-wrap{
+  margin: 0 400px;
+}
+.client-card{
+  width: 510px;
+  height: 200px;
+  float: left;
+  margin-bottom: 69px;
+}
+.client-card:nth-of-type(2n+1){
+  margin-right: 86px;
+}
+.client-image {
+  width: 110px;
+  height: 110px;
+  background-color: #fce38a;
+  float: left;
+}
+.client-contents{
+  margin-left: 140px;
+}
+.client-name {
+  width: 123px;
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 10px;
+  margin: 12px 0 15px;
+}
+.client-job {
+  width: 93px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 16px;
+  margin: 0 0 17px;
+}
+.client-card>.client-contents>.underline{
+  display: block;
+  margin: 0 0 24px;
+}
+.client-comment {
+  width: 373px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+/* end of section happy clients */
+/* section ourstories */ 
+.ourstories{
+  height: 770px;
+}
+.our-stories {
+  width: 105px;
+  height: 21px;
+  font-family: KaushanScript;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  padding-top: 112px;
+  margin: 0 auto 22px;
+  line-height: 21px;
+}
+.latest-blog {
+  width: 202px;
+  height: 23px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  margin: 0 auto 42px;
+  line-height: 23px;
+}
+.ourstories>.underline{
+  background-color: #f38181;
+  margin: 0 auto 47px;
+}
+.blog-card-wrap{
+  margin: 0 345px;
+}
+.blog-card{
+  width: 380px;
+  margin: 0 15px;
+  float: left;
+}
+.blog-card-image {
+  width: 380px;
+  height: 240px;
+  background-color: #f38181;
+  position: relative;
+  margin: 0 0 20px;
+}
+.blog-card-attach{
+  width: 60px;
+  height: 70px;
+  background-color: #95e1d3;
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+}
+.blog-card-attach>.attach-month {
+  width: 30px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  line-height: 20px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.blog-card-attach>.attach-month>.attach-day {
+  font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+font-style: italic;
+}
+.blog-card-title {
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 10px;
+  margin: 0 0 20px;
+}
+.blog-card-contents{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin: 0 0 20px;
+}
+.blog-card>hr{
+  margin-bottom: 20px;
+}
+.replzone{
+  height: 20px;
+  line-height: 20px;
+}
+.repl-image {
+  width: 20px;
+  height: 12px;
+  background-color: #95e1d3;
+  /**/
+  display: inline-block;
+  margin-right: 7px;
+}
+.replzone>.number{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin-right: 18px;
+}
+/* end of section ourstories */ 
+/* section openmap */
+.openmap {
+  width: 1920px;
+  height: 200px;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+.open-map-image {
+  width: 20px;
+  height: 26px;
+  background-color: #f38181;
+  padding-top: 57px;
+  margin: 0 auto 18px;
+}
+.open-map {
+  height: 18px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f38181;
+  /**/
+  line-height: 18px;
+  margin: 0 auto 21px;
+}
+.openmap>.underline{
+  background-color: #f38181;
+}
+/* end of section openmap */
+/* section community */
+.community-wrap{
+  width: 1920px;
+  height: 560px;
+  background-color: #f8f8f8;
+  padding-top: 74px;
+}
+.community{
+  margin: 0 330px;
+}
+/* sns */
+.sns{
+  width: 470px;
+  margin: 0 49px 0 0;
+  float: left;
+}
+.sns>.mogo {
+  width: 131px;
+  height: 34px;
+  font-family: Montserrat;
+  font-size: 46.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cccccc;
+  /**/
+  margin: 0 0 42px;
+  line-height: 34px;
+}
+.sns>.contents {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  /**/
+  margin: 0 0 40px;
+}
+.sns>.followers {
+  height: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  margin: 0 0 18px;
+}
+.followers>.followers-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sns>hr{
+  margin-bottom: 16px;
+}
+.follow-us {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin: 0 15.5px 39px 0;
+}
+.sns-image-wrap{
+  display: inline-block;
+  font-size: 0;
+}
+.sns-image {
+  width: 16px;
+  height: 16px;
+  background-color: #95e1d3;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+.email-input {
+  width: 230px;
+  height: 40px;
+  border: solid 1px #e7e7e7;
+  background-color: #ffffff;
+}
+.email-input::placeholder{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cccccc;
+  position: relative;
+  left: 13px;
+}
+.subscribe-button {
+  width: 150px;
+  height: 40px;
+  border: solid 1px #e7e7e7;
+  background-color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+/* enf of sns*/
+/* blogs */
+.blogs{
+  width: 360px;
+  float: left;
+  margin-right: 86px;
+}
+.blogs-title {
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  line-height: 10px;
+  margin: 0 0 40px;
+}
+.blogs-section{
+  width: 340px;
+  margin: 0 0 31px;
+}
+.blogs-section>.blogs-image {
+  width: 119px;
+  height: 79px;
+  background-color: #95e1d3;
+  float: left;
+}
+.blogs-section>.blogs-contents{
+  width: 260px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  margin: 21px 0px 12px 139px;
+
+}
+.blogs-date {
+  height: 12px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  /**/
+  margin: 0 0 0 139px;
+  line-height: 12px;
+}
+/* end of blogs */
+/* instagram */
+.instagram{
+  width: 280px;
+  float: left;
+}
+.instagram-title {
+  width: 83px;
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  margin: 0 0 40px;
+}
+.instagram>.temp-layer-wrap{
+  font-size: 0;
+  margin: 0 0 20px;
+}
+.instagram>.temp-layer-wrap>.temp-layer {
+  width: 88px;
+  height: 88px;
+  background-color: #000000;
+  display: inline-block;
+  margin: 0 2px 2px 0;
+}
+.instagram-contents {
+  height: 13px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 13px;
+}
+/* end of instagram */ 
+/* end of section community */
+/* footer */
+footer{
+  text-align: center;
+  width: 1920px;
+  height: 560px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+}
+.footer-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+.footer-text>.red {
+  color: #f38181;
+}
+/* end of footer */
