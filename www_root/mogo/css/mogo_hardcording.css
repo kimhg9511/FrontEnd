@@ -9,6 +9,7 @@ font-family: 'Montserrat';
 src: url("../font/Montserrat-Bold.ttf") format("truetype");
 font-weight: bold;
 }
+
 @font-face{
 font-family: 'KaushanScript';
 src: url("../font/KaushanScript-Regular.ttf") format("truetype");
@@ -31,7 +32,8 @@ span{
 #header {
     width: 1920px;
     height: 1000px;
-    background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a);
+    /* background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a); */
+    background-image: url(../img/mogo/mogo_header.png);
 }
 .logo {
     width: 86px;
@@ -51,20 +53,16 @@ span{
     margin-left: 362px;
 }
 .nav-item{
-    height: 10px;
     float: right;
     margin-top: 40px;
     margin-right: 358px;
 }
 .nav-items{
-    width: 60px;
-    height: 10px;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 10px;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
@@ -73,7 +71,7 @@ span{
     margin: 0 27px;
 }
 .nav-items.selected {
-    height: 10px;
+    height: 38px;
     font-family: Montserrat;
     font-size: 14px;
     font-weight: normal;
@@ -83,11 +81,11 @@ span{
     letter-spacing: normal;
     text-align: center;
     color: #fce38a;
+    position: relative;
+    border-bottom: 3px solid #fce38a;
 }
-.SHOPPING-CART {
-    width: 18px;
-    height: 15px;
-    background-color: #ffffff;
+.nav-items>img{
+  float: left;
 }
 .creative-template {
     width: 508px;
@@ -255,9 +253,11 @@ span{
     height: 24px;
     background-color: #ffffff;
 }
+.selected>img{
+  display: block;
+  margin: 103px auto 11px;
+}
 .super-team {
-    width: 119px;
-    height: 14px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: bold;
@@ -268,8 +268,7 @@ span{
     text-align: center;
     color: #ffffff;
     /**/
-    line-height: 250px;
-    transform: translateY(17px);
+    line-height: 14px;
 }
 .image-card {
     width: 380px;
@@ -279,6 +278,9 @@ span{
     margin: 0 15px 110px;
     position: relative;
 }
+.image-card>img{
+  float: left;
+}
 .image-card>.selected {
     width: 380px;
     height: 250px;
@@ -286,8 +288,9 @@ span{
     position: absolute;
     top: -10px;
     left: -10px;
-    background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a);
-}/* selected background */
+    /* background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a); */
+    background-image: url(../img/mogo/mogo_story-img-1.png);
+}
 /* end of section whatwedo */
 /* section statistics */
 .section.statistics{
@@ -384,12 +387,10 @@ span{
 }
 .services-items>img{ 
     width: 32px;
-    height: 31px;
-    background-color: #95e1d3;
+    height: 32px;
     float: left;
 }
 .services-title{
-    width: 110px;
     height: 10px;
     font-family: Montserrat;
     font-size: 14px;
@@ -469,18 +470,17 @@ span{
   .design-main {
     width: 469px;
     height: 576px;
-    /**/
-    background-color: #95e1d3;
+    background-image: url(../img/mogo/mogo_main-img.png);
     margin: 0 auto;
     position: relative;
   }
   .design-attached {
-    width: 199px;
+    width: 270px;
     height: 427px;
-    background-color: #f38181;
+    background-image: url(../img/mogo/mogo_sub-img.png);
     position: absolute;
     top: 197px;
-    left: 392px;
+    left: 352px;
   }
 /* end of section for all devices */
 /* section service */
@@ -568,12 +568,10 @@ span{
   .drop-header>img {
     width: 30px;
     height: 30px;
-    background-color: #95e1d3; /* need to change */
     margin: 15px 0px 15px 16px;
     float: left;
   }
   .dropdown-header-title {
-    width: 110px;
     height: 30px;
     font-family: Montserrat;
     font-size: 14px;
@@ -593,9 +591,11 @@ span{
   .drop-header>.toggle {
     width: 22px;
     height: 12px;
-    background-color: #cccccc;
     float: right;
     margin: 25px 20px 25px 0;
+  }
+  .drop-header>.toggle>img{
+    float: left;
   }
   .drop-body {
     width: 600px;
@@ -604,7 +604,6 @@ span{
     position: relative;
   }
   .drop-body-content{
-    width: 525px;
     height: 132px;
     font-family: Roboto;
     font-size: 15px;
@@ -615,7 +614,22 @@ span{
     letter-spacing: normal;
     text-align: left;
     color: #999999;
-    margin: 0px 55px 28px 20px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    padding-right: 28px;
+    margin: 21px 25px 28px 20px;
+    overflow-x : hidden;
+    overflow-y : auto;
+  }
+  .drop-body-content::-webkit-scrollbar{
+    width: 5px;
+  }
+  .drop-body-content::-webkit-scrollbar-track{
+    background-color: #f5f5f5;
+  }
+  .drop-body-content::-webkit-scrollbar-thumb{
+    background-color: #95e1d3;
   }
   .drop-body-scroll {
   width: 5px;
@@ -642,11 +656,12 @@ span{
   width: 150px;
   height: 150px;
   border: solid 3px #95e1d3;
-  /**/
   float: left;
   margin: 70px 61px 70px 110px;
-} /* need to change - add content */
-
+}
+.comment-image>img{
+  margin: 44px;
+}
 .comment-contents{
     width: 767px;
     height: 96px;
@@ -695,7 +710,6 @@ span{
       top: 50%;
       transform: translateY(-50%);
       left: 23px;
-      background-color: #95e1d3;/* need to change */
   }
   .carousel-right{
     width: 12px;
@@ -704,7 +718,6 @@ span{
       top: 50%;
       transform: translateY(-50%);
       right: 23px;
-      background-color: #95e1d3;/* need to change */
   }
 /* end of section comment */
 /* section whoweare */
@@ -775,6 +788,11 @@ span{
     width: 380px;
     height: 470px;
     position: relative;
+    background-image: url(../img/mogo/mogo_mot1.png);
+  }
+  .whoweare>.image-card>.notselected {
+    width: 380px;
+    height: 470px;
   }
   .whoweare>.image-card>.selected>.menu{
     width: 228px;
@@ -829,6 +847,9 @@ span{
     width: 1920px;
     height: 250px;
     background-color: #f8f8f8;
+  }
+  .logos>img{
+    margin: 50px 360px;
   }
 /* end of section whoweare */
 /* section whatwedo_works */
@@ -885,25 +906,31 @@ span{
     color: #999999;
     margin: 0 auto 102px;
   }
-  .whatwedo_works>.temp-wrap{
-      font-size: 0;
-      margin-bottom: 60px;
-  }
-  .whatwedo_works>.temp-wrap>.temp-layer {
-    width: 480px;
-    height: 390px;
-    background-color: #95e1d3;
-    display: inline-block;
-    border: 1px solid black;
-    box-sizing: border-box;
-  }
+td>img{
+  display: block;
+}
+.whatwedo_works>.comment-wrap{
+  padding-top: 15px;
+  margin: 0;
+  background-color: #ffffff;
+}
+.whatwedo_works>.comment-wrap>.comment-content-wrap>.comment-image{
+  width: 210px;
+  height: 210px;
+  background-image: url(../img/mogo/mogo_comment2.png);
+  border: none;
+}
+.whatwedo_works .comment-text{
+  margin-top: 40px;
+}
 /* end of section whatwedo_works */
 /* section happy clients */
 .happyclients{
   width: 1920px;
   height: 900px;
-  background-color: #d9d9d9;
-  margin-top: 90px;
+  margin-top: 120px;
+  background-image: url(../img/mogo/mogo_client-bg.png);
+  background-size: 100% 100%;
 }
 .happy-clients {
   width: 134px;
@@ -957,7 +984,6 @@ span{
 .client-image {
   width: 110px;
   height: 110px;
-  background-color: #fce38a;
   float: left;
 }
 .client-contents{
@@ -1136,10 +1162,17 @@ font-style: italic;
 .repl-image {
   width: 20px;
   height: 12px;
-  background-color: #95e1d3;
   /**/
   display: inline-block;
   margin-right: 7px;
+}
+.repl-image.one{
+  background-image: url(../img/mogo/mogo_view.png);
+  background-repeat: no-repeat;
+}
+.repl-image.two{
+  background-image: url(../img/mogo/mogo_repl.png);
+  background-repeat: no-repeat;
 }
 .replzone>.number{
   font-family: Roboto;
@@ -1157,13 +1190,12 @@ font-style: italic;
 .openmap {
   width: 1920px;
   height: 200px;
-  background-color: #d9d9d9;
+  background-image: url(../img/mogo/mogo_map.png);
   text-align: center;
 }
 .open-map-image {
   width: 20px;
   height: 26px;
-  background-color: #f38181;
   padding-top: 57px;
   margin: 0 auto 18px;
 }
@@ -1270,7 +1302,6 @@ font-style: italic;
 .sns-image {
   width: 16px;
   height: 16px;
-  background-color: #95e1d3;
   display: inline-block;
   margin: 0 7.5px;
 }
@@ -1388,16 +1419,11 @@ font-style: italic;
   color: #333333;
   margin: 0 0 40px;
 }
-.instagram>.temp-layer-wrap{
-  font-size: 0;
-  margin: 0 0 20px;
+.instagram>table{
+  margin-bottom: 20px;
 }
-.instagram>.temp-layer-wrap>.temp-layer {
-  width: 88px;
-  height: 88px;
-  background-color: #000000;
-  display: inline-block;
-  margin: 0 2px 2px 0;
+.instagram td{
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .instagram-contents {
   height: 13px;
