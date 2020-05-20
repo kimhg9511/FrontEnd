@@ -1,0 +1,1467 @@
+/* commons */
+@font-face{
+font-family: 'Montserrat';
+src: url("../font/Montserrat-Regular.ttf") format("truetype");
+
+}
+@font-face{
+font-family: 'Montserrat';
+src: url("../font/Montserrat-Bold.ttf") format("truetype");
+font-weight: bold;
+}
+
+@font-face{
+font-family: 'KaushanScript';
+src: url("../font/KaushanScript-Regular.ttf") format("truetype");
+}
+/* default width - 1920px */
+hr{
+    margin: 0;
+}
+ul{
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+#wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+/* section header */
+#header {
+    width: 1920px;
+    height: 1000px;
+    /* background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a); */
+    background-image: url(../img/mogo/mogo_header.png);
+}
+.logo {
+    width: 86px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 23px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /**/
+    float: left;
+    margin-top: 28px;
+    margin-left: 362px;
+}
+.nav-item{
+    float: right;
+    margin-top: 40px;
+    margin-right: 358px;
+}
+.nav-items{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    display: inline-block;
+    margin: 0 27px;
+}
+.nav-items.selected {
+    height: 38px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fce38a;
+    position: relative;
+    border-bottom: 3px solid #fce38a;
+}
+.nav-items>img{
+  float: left;
+}
+.creative-template {
+    width: 508px;
+    height: 87px;
+    font-family: KaushanScript;
+    font-size: 72px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    padding-top: 229px;
+    margin: 0 auto 42px;
+    line-height: 87px;
+}
+.welcome-to-mogo {
+    width: 802px;
+    height: 248px;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 124px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    margin: 0 auto 71px;
+}
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    border: 0px;
+    /**/
+    margin: 0 auto 50px;
+}/* underline */
+.learn-more {
+    width: 160px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 41px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    margin: 0 auto 157px;
+    border: solid 3px #ffffff;
+}
+.slide{
+    text-align: center;
+}
+.slide-bar {
+    width: 280px;
+    height: 3px;
+    background-color: #ffffff;
+    /**/
+    display: inline-block;
+    margin: 0 15px 25px;
+}
+.slide-select{
+    height: 3px;
+    position: relative;
+}
+.slide-select>.selected {
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    /**/
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+.slided-name{
+    height: 17px;
+}
+.slide-items {
+    width: 280px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /**/
+    line-height: 17px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.slide-items>.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* end of header */
+/* section whatwedo */
+.whatwedo{
+    text-align: center;
+}
+.whatwedo>.what-we-do {
+    width: 108px;
+    height: 23px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 91px auto 23px;
+  }
+.story-about-us {
+    width: 268px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 40px;
+}
+.whatwedo>.underline{
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto 47px;
+}
+.whatwedo>.contents{
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    line-height: 19.5px;
+    margin: 0 auto 101px;
+}
+.USERS {
+    width: 32px;
+    height: 24px;
+    background-color: #ffffff;
+}
+.selected>img{
+  display: block;
+  margin: 103px auto 11px;
+}
+.super-team {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    line-height: 14px;
+}
+.image-card {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;/* need to change */
+    display: inline-block;
+    margin: 0 15px 110px;
+    position: relative;
+}
+.image-card>img{
+  float: left;
+}
+.image-card>.selected {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    /* background-image: linear-gradient(to top, #fce38a, #f38181), linear-gradient(to bottom, #fce38a, #fce38a); */
+    background-image: url(../img/mogo/mogo_story-img-1.png);
+}
+/* end of section whatwedo */
+/* section statistics */
+.section.statistics{
+    width: 1920px;
+    height: 270px;
+    background-color: #95e1d3;
+    text-align: center;
+}
+.statistic-number{
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    line-height: 52px;
+    margin: 89px auto 30px;
+}
+.statistic-items{
+    width: 240px;
+    height: 270px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    /**/
+    display: inline-block;
+    border-left: 1px solid #ffffff;
+}
+.statistic-items:last-of-type{
+    border-right: 1px solid #ffffff;
+}
+/* end of section statistics*/
+/* section we-work-with */
+.weworkwith{
+    text-align: center;
+}
+.we-work-with {
+    width: 130px;
+    height: 24px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 24px;
+    margin: 109px auto 22px;
+}
+.amazing-services {
+    width: 309px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 42px;
+}
+.weworkwith>.underline{
+    background-color: #f38181;
+    margin: 0 auto 66px;
+}
+.services-wrap{
+    width: 1250px;
+    margin: 0 auto;
+}
+.services-items{
+    width: 333px;
+    height: 70px;
+    margin: 0 34px;
+    display: inline-block;
+    margin-bottom: 99px;
+}
+.services-items>img{ 
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+.services-title{
+    height: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    /**/
+    /* line-height: 10px; */
+    float: left;
+    margin-left: 27px;
+    /* margin-bottom: 20px; */
+}
+.services-content {
+    width: 300px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    margin-left: 59px;
+    margin-top: -2px;
+  }
+/* end of section we-work-with */
+/* section for all devices */
+.foralldevices {
+    width: 1920px;
+    height: 850px;
+    background-color: #eee;/*need to change */
+    margin-top: 23px;
+    text-align: center;
+  }  
+.for-all-devices {
+    width: 131px;
+    height: 24px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    margin: 109px auto 22px;
+    line-height: 24px;
+  }
+  .unique-design {
+    width: 245px;
+    height: 27px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 27px;
+    margin: 0 auto 38px;
+  }
+  .foralldevices>.underline{
+      background-color: #f38181;
+      margin: 0 auto 51px;
+  }
+  .design-main {
+    width: 469px;
+    height: 576px;
+    background-image: url(../img/mogo/mogo_main-img.png);
+    margin: 0 auto;
+    position: relative;
+  }
+  .design-attached {
+    width: 270px;
+    height: 427px;
+    background-image: url(../img/mogo/mogo_sub-img.png);
+    position: absolute;
+    top: 197px;
+    left: 352px;
+  }
+/* end of section for all devices */
+/* section service */
+.service-wrap{
+    height: 790px;
+    margin: 0 300px;
+    text-align: center;
+}
+.service {
+    width: 72px;
+    height: 20px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 20px;
+    margin: 112px auto 23px;
+  }
+.service-wrap>.what-we-do {
+    width: 209px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0 auto 42px;
+  }
+.service-wrap>.underline{
+    background-color: #f38181;
+    margin: 0 auto 46px;
+}
+.service-wrap>.comment{
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    /**/
+    margin: 0 auto 92px;
+  }
+.service-wrap>img {
+    width: 570px;
+    height: 380px;
+    background-color: #95e1d3;/* need to change */
+    margin-left: 60px;
+    margin-right: 50px;
+    float: left;
+  }
+  .dropdown{
+      float: left;
+      width: 600px;
+      height: 240px;
+      margin-bottom: 10px;
+  }
+  .dropdown:not(.selected){
+      height: 60px;
+  }
+  .dropdown:not(.selected)>.drop-body{
+      display: none;
+  }
+  .drop-header {
+    width: 600px;
+    height: 60px;
+    border: solid 1px #e5e5e5;
+  }
+  .drop-header>img {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0px 15px 16px;
+    float: left;
+  }
+  .dropdown-header-title {
+    height: 30px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+
+    /**/
+    margin: 25px 0 25px 15px;
+    line-height: 15px;
+    float: left;
+  }
+  .drop-header>.toggle {
+    width: 22px;
+    height: 12px;
+    float: right;
+    margin: 25px 20px 25px 0;
+  }
+  .drop-header>.toggle>img{
+    float: left;
+  }
+  .drop-body {
+    width: 600px;
+    height: 181px;
+    border: solid 1px #e5e5e5;
+    position: relative;
+  }
+  .drop-body-content{
+    height: 132px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    padding-right: 28px;
+    margin: 21px 25px 28px 20px;
+    overflow-x : hidden;
+    overflow-y : auto;
+  }
+  .drop-body-content::-webkit-scrollbar{
+    width: 5px;
+  }
+  .drop-body-content::-webkit-scrollbar-track{
+    background-color: #f5f5f5;
+  }
+  .drop-body-content::-webkit-scrollbar-thumb{
+    background-color: #95e1d3;
+  }
+  .drop-body-scroll {
+  width: 5px;
+  height: 140px;
+  border-radius: 2.5px;
+  background-color: #f38181;
+  position: absolute;
+  top:21px;
+  right: 25px;
+}
+/* end of section service */
+/* section comment */
+.comment-wrap{
+    width: 1920px;
+    height: 290px;
+    background-color: #f8f8f8;
+}
+.comment-wrap>.comment-content-wrap{
+    height: 290px;
+    position: relative;
+    margin: 0 360px;
+}
+.comment-image {
+  width: 150px;
+  height: 150px;
+  border: solid 3px #95e1d3;
+  float: left;
+  margin: 70px 61px 70px 110px;
+}
+.comment-image>img{
+  margin: 44px;
+}
+.comment-contents{
+    width: 767px;
+    height: 96px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    /**/
+    margin: 70px 0;
+    float: left;
+  }
+  .comment-contents>.comment-text{
+      margin-bottom: 23px;
+  }
+.comment-contents>.underline{
+    background-color: #f38181;
+    margin-top: 11px;
+    float: left;
+}
+  .comment-name {
+    width: 82px;
+    height: 22px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    /**/
+    float: left;
+    line-height: 22px;
+    margin-left: 10px;
+  }
+  .carousel-left{
+    width: 12px;
+    height: 22px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 23px;
+  }
+  .carousel-right{
+    width: 12px;
+    height: 22px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 23px;
+  }
+/* end of section comment */
+/* section whoweare */
+.whoweare{
+    height: 1050px;
+    text-align: center;
+    margin: 0 345px;
+}
+.who-we-are {
+    width: 109px;
+    height: 23px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    margin: 99px auto 23px;
+    line-height: 23px;
+  }
+  .meet-our-team {
+    width: 254px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    margin: 0 auto 42px;
+    line-height: 23px;
+  }
+  .whoweare>.underline{
+      background-color: #f38181;
+      margin: 0px auto 46px;
+  }
+  .whoweare>.contents {
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    /**/
+    margin: 0px auto 92px;
+  }
+  .whoweare>.image-card {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    float: left;
+    margin: 0 15px 31px;
+  }
+  .whoweare>.image-card>.selected {
+    width: 380px;
+    height: 470px;
+    position: relative;
+    background-image: url(../img/mogo/mogo_mot1.png);
+  }
+  .whoweare>.image-card>.notselected {
+    width: 380px;
+    height: 470px;
+  }
+  .whoweare>.image-card>.selected>.menu{
+    width: 228px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0;
+  }
+  .whoweare>.image-card>.selected>.menu>.menu-items {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    display: inline-block;
+    margin: 0;
+  }
+  .whoweare>.image-card>.selected>.menu>.menu-items:not(:last-of-type){
+      border-right: #f38181 1px solid;
+  }
+  .image-card>.card-name {
+
+    height: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    margin: 31px auto 15px;
+    line-height: 10px;
+  }
+  .image-card>.card-job {
+    height: 16px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    /**/
+    line-height: 16px;
+  }
+  .logos {
+    width: 1920px;
+    height: 250px;
+    background-color: #f8f8f8;
+  }
+  .logos>img{
+    margin: 50px 360px;
+  }
+/* end of section whoweare */
+/* section whatwedo_works */
+.whatwedo{
+    text-align: center;
+}
+.whatwedo_works>.what-we-do {
+    width: 108px;
+    height: 23px;
+    font-family: KaushanScript;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 110px auto 23px;
+  }
+  .whatwedo_works>.some-of-our-work {
+    width: 324px;
+    height: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    /**/
+    line-height: 23px;
+    margin: 0px auto 42px;
+  }
+  .whatwedo_works>.underline{
+      background-color: #f38181;
+      margin: 0 auto 46px;
+  }
+  .whatwedo_works>.contents {
+    width: 954px;
+    height: 39px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    margin: 0 auto 102px;
+  }
+td>img{
+  display: block;
+}
+.whatwedo_works>.comment-wrap{
+  padding-top: 15px;
+  margin: 0;
+  background-color: #ffffff;
+}
+.whatwedo_works>.comment-wrap>.comment-content-wrap>.comment-image{
+  width: 210px;
+  height: 210px;
+  background-image: url(../img/mogo/mogo_comment2.png);
+  border: none;
+}
+.whatwedo_works .comment-text{
+  margin-top: 40px;
+}
+/* end of section whatwedo_works */
+/* section happy clients */
+.happyclients{
+  width: 1920px;
+  height: 900px;
+  margin-top: 120px;
+  background-image: url(../img/mogo/mogo_client-bg.png);
+  background-size: 100% 100%;
+}
+.happy-clients {
+  width: 134px;
+  height: 30px;
+  font-family: KaushanScript;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  line-height: 30px;
+  padding-top: 109px;
+  margin: 0 auto 16px;
+}
+.what-people-say {
+  width: 294px;
+  height: 23px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  line-height: 23px;
+  margin: 0 auto 42px;
+}
+.happyclients .underline{
+  background-color: #f38181;
+  margin: 0 auto 87px;
+}
+.client-card-wrap{
+  margin: 0 400px;
+}
+.client-card{
+  width: 510px;
+  height: 200px;
+  float: left;
+  margin-bottom: 69px;
+}
+.client-card:nth-of-type(2n+1){
+  margin-right: 86px;
+}
+.client-image {
+  width: 110px;
+  height: 110px;
+  float: left;
+}
+.client-contents{
+  margin-left: 140px;
+}
+.client-name {
+  width: 123px;
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 10px;
+  margin: 12px 0 15px;
+}
+.client-job {
+  width: 93px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 16px;
+  margin: 0 0 17px;
+}
+.client-card>.client-contents>.underline{
+  display: block;
+  margin: 0 0 24px;
+}
+.client-comment {
+  width: 373px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+/* end of section happy clients */
+/* section ourstories */ 
+.ourstories{
+  height: 770px;
+}
+.our-stories {
+  width: 105px;
+  height: 21px;
+  font-family: KaushanScript;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  padding-top: 112px;
+  margin: 0 auto 22px;
+  line-height: 21px;
+}
+.latest-blog {
+  width: 202px;
+  height: 23px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  /**/
+  margin: 0 auto 42px;
+  line-height: 23px;
+}
+.ourstories>.underline{
+  background-color: #f38181;
+  margin: 0 auto 47px;
+}
+.blog-card-wrap{
+  margin: 0 345px;
+}
+.blog-card{
+  width: 380px;
+  margin: 0 15px;
+  float: left;
+}
+.blog-card-image {
+  width: 380px;
+  height: 240px;
+  background-color: #f38181;
+  position: relative;
+  margin: 0 0 20px;
+}
+.blog-card-attach{
+  width: 60px;
+  height: 70px;
+  background-color: #95e1d3;
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+}
+.blog-card-attach>.attach-month {
+  width: 30px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  line-height: 20px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.blog-card-attach>.attach-month>.attach-day {
+  font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+font-style: italic;
+}
+.blog-card-title {
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 10px;
+  margin: 0 0 20px;
+}
+.blog-card-contents{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin: 0 0 20px;
+}
+.blog-card>hr{
+  margin-bottom: 20px;
+}
+.replzone{
+  height: 20px;
+  line-height: 20px;
+}
+.repl-image {
+  width: 20px;
+  height: 12px;
+  /**/
+  display: inline-block;
+  margin-right: 7px;
+}
+.repl-image.one{
+  background-image: url(../img/mogo/mogo_view.png);
+  background-repeat: no-repeat;
+}
+.repl-image.two{
+  background-image: url(../img/mogo/mogo_repl.png);
+  background-repeat: no-repeat;
+}
+.replzone>.number{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin-right: 18px;
+}
+/* end of section ourstories */ 
+/* section openmap */
+.openmap {
+  width: 1920px;
+  height: 200px;
+  background-image: url(../img/mogo/mogo_map.png);
+  text-align: center;
+}
+.open-map-image {
+  width: 20px;
+  height: 26px;
+  padding-top: 57px;
+  margin: 0 auto 18px;
+}
+.open-map {
+  height: 18px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f38181;
+  /**/
+  line-height: 18px;
+  margin: 0 auto 21px;
+}
+.openmap>.underline{
+  background-color: #f38181;
+}
+/* end of section openmap */
+/* section community */
+.community-wrap{
+  width: 1920px;
+  height: 560px;
+  background-color: #f8f8f8;
+  padding-top: 74px;
+}
+.community{
+  margin: 0 330px;
+}
+/* sns */
+.sns{
+  width: 470px;
+  margin: 0 49px 0 0;
+  float: left;
+}
+.sns>.mogo {
+  width: 131px;
+  height: 34px;
+  font-family: Montserrat;
+  font-size: 46.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cccccc;
+  /**/
+  margin: 0 0 42px;
+  line-height: 34px;
+}
+.sns>.contents {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  /**/
+  margin: 0 0 40px;
+}
+.sns>.followers {
+  height: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  margin: 0 0 18px;
+}
+.followers>.followers-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sns>hr{
+  margin-bottom: 16px;
+}
+.follow-us {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  margin: 0 15.5px 39px 0;
+}
+.sns-image-wrap{
+  display: inline-block;
+  font-size: 0;
+}
+.sns-image {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+.email-input {
+  width: 230px;
+  height: 40px;
+  border: solid 1px #e7e7e7;
+  background-color: #ffffff;
+}
+.email-input::placeholder{
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cccccc;
+  position: relative;
+  left: 13px;
+}
+.subscribe-button {
+  width: 150px;
+  height: 40px;
+  border: solid 1px #e7e7e7;
+  background-color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+/* enf of sns*/
+/* blogs */
+.blogs{
+  width: 360px;
+  float: left;
+  margin-right: 86px;
+}
+.blogs-title {
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  line-height: 10px;
+  margin: 0 0 40px;
+}
+.blogs-section{
+  width: 340px;
+  margin: 0 0 31px;
+}
+.blogs-section>.blogs-image {
+  width: 119px;
+  height: 79px;
+  background-color: #95e1d3;
+  float: left;
+}
+.blogs-section>.blogs-contents{
+  width: 260px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  margin: 21px 0px 12px 139px;
+
+}
+.blogs-date {
+  height: 12px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  /**/
+  margin: 0 0 0 139px;
+  line-height: 12px;
+}
+/* end of blogs */
+/* instagram */
+.instagram{
+  width: 280px;
+  float: left;
+}
+.instagram-title {
+  width: 83px;
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  margin: 0 0 40px;
+}
+.instagram>table{
+  margin-bottom: 20px;
+}
+.instagram td{
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.instagram-contents {
+  height: 13px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  /**/
+  line-height: 13px;
+}
+/* end of instagram */ 
+/* end of section community */
+/* footer */
+footer{
+  text-align: center;
+  width: 1920px;
+  height: 560px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+}
+.footer-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+.footer-text>.red {
+  color: #f38181;
+}
+/* end of footer */
