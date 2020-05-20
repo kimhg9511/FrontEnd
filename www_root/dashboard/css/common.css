@@ -1,7 +1,8 @@
 body{
     display: grid;
-    min-width: 1480px;
+    width: 1480px;
     min-height: 100vh;
+    margin: 0 auto;
     grid-template-columns: 265px 1fr 300px;
     grid-template-rows: 60px 1fr;
     grid-template-areas: 
@@ -11,25 +12,52 @@ body{
 }
 header{
     grid-area: header;
-    background-color: #eee;
     position: relative;
 }
 .header__input{
     width: 216px;
-    height: 33px;
+    height: 30px;
     border-radius: 15.3px;
     border: solid 1px #c5c5c5;
-    background-color: #e5e5e5;
     position: relative;
-    top: 14px;
+    top: 15px;
     left: 48px;
+    box-sizing: border-box;
 }
-.header>.profile{
+.profile{
     width: 300px;
     height: 100%;
-    background-color: #999;
     float: right;
 }
+.profile__img--profile{
+    width: 29px;
+    height: 28px;
+    background-color: #eee;
+    float: left;
+    margin: 16px 16px 0 34px;
+}
+.profile__span{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    line-height: 60px;
+    color: #aeaeae;
+    float: left
+}
+.profile__img--box{
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin: 20px 26px 0 0;
+    background-color: #eee;
+}
+.profile__img--alarm{
+    width: 18px;
+    height: 22px;
+    float: right;
+    margin: 20px 27px 0 0;
+    background-color: #eee;
+}  
 /* end of header */
 .left-navbar{
     grid-area: left;
@@ -97,10 +125,100 @@ header{
 /* end of navbar*/
 .main-contents{
     grid-area: center;
-    background-color: #bbb;
 }
+.main-carousel{
+    height: 340px;
+    background-color: #eee;
+}
+.main-card-wrap{
+    margin: 0 95px;
+    position: relative;
+}
+.main-card-sort{
+    width: 915px;
+    height: 50px;
+    position: absolute;
+    background-color: #ddd;
+    top: 0;
+    left: -95px;
+    opacity: 0.9;
+    z-index: 2000;
+}
+.main-card-sort__image--one-column{
+    width: 23px;
+    height: 16px;
+    background-color: #ccc;
+    margin: 17px 0 0 61px;
+    float: left;
+}
+.main-card-sort__image--three-column{
+    width: 23px;
+    height: 16px;
+    background-color: #ccc;
+    margin: 17px 0 0 28px;
+    float: left;
+}
+.main-card{
+    width: 210px;
+    float: left;
+    border-bottom: 2px solid #e1e1e1;
+    padding: 0px 47px 20px 0;
+    margin-bottom: 37px;
+}
+.main-card:nth-of-type(3n+1){
+    padding-right: 0;
+}
+.main-card__img{
+    height: 140px;
+    background-color: #ddd;
+    margin-bottom: 13px;
+}
+.main-card__span{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.65px;
+    color: #7a7a7a;
+}
+/* end of main */
 .right-sidebar{
     grid-area: right;
-    background-color: #ccc;
+    background-color: #0e1214;
 }
-
+.sidebar-timecard{
+    height: 200px;
+    background-color: #191e23;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0e1214;
+}
+.sidebar-timecard__img{
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    margin: 20px 20px 24px 36px;
+    float: left;
+}
+.sidebar-timecard__span--title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: 1.6px;
+    margin: 20px 0 0 0;
+    float: left;
+    color: #c0cccc;
+}
+.sidebar-timecard__span--time{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: 1.4px;
+    color: #606971;
+    float: right;
+    margin: 20px 20px 0 0;
+}
+.sidebar-timecard__span--contents{
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.33;
+    padding-top: 83px;
+    margin: 0 23px 0 38px;
+}
