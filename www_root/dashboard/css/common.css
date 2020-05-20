@@ -1,0 +1,106 @@
+body{
+    display: grid;
+    min-width: 1480px;
+    min-height: 100vh;
+    grid-template-columns: 265px 1fr 300px;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+        "left header header"
+        "left center right"
+        "left center right";
+}
+header{
+    grid-area: header;
+    background-color: #eee;
+    position: relative;
+}
+.header__input{
+    width: 216px;
+    height: 33px;
+    border-radius: 15.3px;
+    border: solid 1px #c5c5c5;
+    background-color: #e5e5e5;
+    position: relative;
+    top: 14px;
+    left: 48px;
+}
+.header>.profile{
+    width: 300px;
+    height: 100%;
+    background-color: #999;
+    float: right;
+}
+/* end of header */
+.left-navbar{
+    grid-area: left;
+    background-color: #0e1214;
+}
+.logo{
+    height: 120px;
+    box-sizing: border-box;
+    border-top: 8px solid #3bb4bc;
+}
+.logo__img{
+    width: 62px;
+    height: 65px;
+    background-color: #fff;
+    margin: 30px 99px 26px 104px;
+}
+.nav-items{
+    height: 50px;
+    background-color: #191e23;
+    border-bottom: 1px solid #0e1214;
+}
+.nav-items__img{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background-color: rgba(189, 213, 237, 0.41);
+    margin: 17px 21px 17px 38px;
+}
+.nav-items__span{
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(189, 213, 237, 0.41);
+    letter-spacing: 1.3px;
+}
+.nav-items--selected{
+    background-color: #3bb4bc;
+}
+.nav-items--selected__img{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 17px 21px 17px 38px;
+    color: #ffffff;
+}
+.nav-items--selected__span{
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1.3px;
+}
+.nav-items-dropdown{
+    background-color: #0e1214;
+    height: 50px;
+}
+.nav-items-dropdown__span{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    color: rgba(114, 136, 154, 0.41);
+    line-height: 50px;
+    margin-left: 40px;
+}
+/* end of navbar*/
+.main-contents{
+    grid-area: center;
+    background-color: #bbb;
+}
+.right-sidebar{
+    grid-area: right;
+    background-color: #ccc;
+}
+
