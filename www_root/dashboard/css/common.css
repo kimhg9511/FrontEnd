@@ -54,6 +54,7 @@ header{
     width: 300px;
     height: 100%;
     float: right;
+    position: relative;
 }
 .profile__img--profile{
     width: 29px;
@@ -83,7 +84,95 @@ header{
     height: 22px;
     float: right;
     margin: 20px 27px 0 0;
-}  
+}
+.profile-dropdown{
+    width: 300px;
+    height: 340px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+}
+.profile-dropdown-header{
+    height: 55px;
+    background-color: #cbe6e6;
+    position: relative;
+}
+.profile-dropdown-header::after{
+    display: block;
+    content: '';
+    border-top      : 8px solid transparent;
+    border-bottom   : 8px solid #cbe6e6;
+    border-left     : 6px solid transparent;
+    border-right    : 6px solid transparent;
+    position: absolute;
+    top: -16px;
+    right: 78px;
+}
+.profile-dropdown-header__img{
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+.profile-dropdown-header__span{
+    position: absolute;
+    left: 36px;
+    line-height: 55px;
+    color: rgba(94, 119, 119, 0.41);
+}
+.profile-dropdown-body{
+    height: 252px;
+    background-color: #eff7f8;
+    padding: 33px 36px 0;
+}
+.image-frame{
+    position: relative;
+}
+.image-frame__span{
+    display: inline-block;
+    width: 212px;
+    height: 44px;
+    background-color: #ffffff;
+    line-height: 44px;
+    color: #c0cccc;
+    padding-left: 14px;
+}
+.image-frame__img{
+    display: block;
+}
+.image-frame::after{
+    display: block;
+    width: 35px;
+    height: 35px;
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/right-sidebar/dash_play.png);
+    background-repeat: no-repeat;
+}
+.image-frame-bottom{
+    height: 8px;
+    float: left;
+}
+.image-frame-bottom.green{
+    width: 171px;
+    background-color: #3bb4bc;
+}
+.image-frame-bottom.red{
+    width: 55px;
+    background-color: #fe7575;
+}
+.profile-dropdown-body__span{
+    color: #7d9999;
+    float: left;
+    margin-top: 15px;
+}
+
 /* end of header */
 .left-navbar{
     grid-area: left;
@@ -220,10 +309,11 @@ header{
     width: 915px;
     height: 50px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
+    color: #dddddd;
+    opacity: 0.95;
     top: 0;
     left: -95px;
-    opacity: 0.9;
     z-index: 2000;
 }
 .main-card-sort__image--list{
@@ -238,15 +328,27 @@ header{
     margin: 17px 0 0 28px;
     float: left;
 }
-.main-card-sort__input--sort{
+.main-card-sort__ul{
     float: right;
-    margin: 25px 66px 0 0 ;
     border: none;
     letter-spacing: 0.65px;
-    color: #cccccc;
-    background-color: inherit;
-    padding-right: 22px;
+    background-color: transparent;
+    margin: 25px 22px 0 0;
     transform: translateY(-50%);
+    font-size: 13px;
+}
+.main-card-sort__ul>li:not(.selected){
+    display: none;
+}
+.main-card-sort__div--select{
+    display: block;
+    border-top      : 9px solid #dddddd;
+    border-bottom   : 9px solid transparent;
+    border-left     : 6.5px solid transparent;
+    border-right    : 6.5px solid transparent;
+    float: right;
+    transform: translateY(-4.5px);
+    margin: 25px 66px 0 0 ;
 }
 .main-card{
     width: 210px;
@@ -276,7 +378,7 @@ header{
 }
 .right-sidebar__span-reply{
     display: block;
-    margin: 42px 0 0 33px;
+    margin: 34px 0 0 33px;
     font-size: 14px;
     letter-spacing: 1.6px;
     color: #c0cccc;
@@ -296,6 +398,19 @@ header{
     background-color: #191e23;
     box-sizing: border-box;
     border-bottom: 1px solid #0e1214;
+    position: relative;
+}
+.sidebar-timecard:last-of-type::after{
+    display: block;
+    content: '';
+    border-top      : 8px solid transparent;
+    border-bottom   : 8px solid #0e1214;
+    border-left     : 6px solid transparent;
+    border-right    : 6px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%); */
 }
 .sidebar-timecard__img{
     width: 38px;
