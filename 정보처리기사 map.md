@@ -270,29 +270,101 @@ WAS - 동적인 웹
 
 ### A.데이터 모델의 구성 요소 - 개체
 
+표현하려는 것, 현실 세계의 대상체, 영속적
+
 ### B.데이터 모델의 구성 요소 - 속성
+
+개체를 구성, 개체의 특성, Degree, 차수
 
 ### B.데이터 모델의 구성 요소 - 관계
 
+개체간의 논리적인 연결 1:1 ~ n:n 종속, 중복, 재귀, 배타
+
 ### C.식별자
 
-### A.E-R 모델
+유일하게 구분할 수 있는 구분자
+
+주(primary key)/보조(unique index)
+
+내부 / 외부(foreign key)
+
+단일 / 복합
+
+원조 / 대리
+
+후보 식별자
+
+### A.E(ntity)-R(elationship) 모델
+
+View의 단일화
+
+피터 첸 표기법
+
+정보 공학 표기법
+
+바커 표기법
 
 ### C.관계형 데이터 모델
 
+.
+
 ### A.관계형 데이터베이스의 구조
+
+릴레이션
+
+​	튜플, 속성, 도메인(값들의 집합 - 중복x, 가짓수)
 
 ### A.관계형 데이터베이스의 제약 조건 - 키
 
+후보키 = 기본키 + 대체키 슈퍼키, 외래키 
+
 ### B.관계형 데이터베이스의 제약 조건 - 무결성
+
+개체 무결성(PK), 도메인 무결성(도메인), 참조 무결성(FK), 사용자 정의 무결성
 
 ### A.관계대수 및 관계해석
 
+select<조건>(R)
+
+project<속성>(R)
+
+R join 키속성r=키속성s S
+
+R [속성r division 속성s] S
+
+관계해석 : 데이터의 연산 표현, 비절차적,
+
+카티션 프로덕트
+
 ### A.정규화
+
+비정규 - 1NF - 2NF - 3NF - BCNF - 4NF - 5NF
+
+도메인이 원자값
+
+부분적 함수 종속 제거
+
+이행적 함수 종속 제거
+
+결정자이면서 후보키가 아닌 것 제거
+
+다치 종속
+
+조인 종속성
 
 ### B.반정규화
 
+편의성을 위해 규화를 위배
+
 ### A.시스템 카탈로그
+
+데이터 딕셔너리
+
+시스템 카탈로그, 데이터 사전
+
+메타 데이터 - 시스템 카탈로그에 저장된 정보
+
+데이터 디렉터리 - 시스템만 접근 가능
 
 ## 물리 데이터베이스 설계
 
@@ -434,23 +506,89 @@ delete from table ~~
 
 ### B.DML - JOIN
 
-
-
 ## SQL 활용
 
 ### A.프로시저
 
+절차형 SQL, 트랜잭션 언어, Stored, batch
+
+DECLARE
+
+EVENT
+
+BEGIN
+
+​	CONTROL
+
+​	SQL
+
+​	EXCEPTION
+
+​	TRANSACTION
+
+END
+
+EXECUTE, EXEC, CALL procedure_name
+
+DROP PROCEDURE procedure_name
+
 ### B.트리거 
+
+DECLARE
+
+EVENT
+
+BEGIN
+
+​	CONTROL
+
+​	SQL
+
+​	EXCEPTION
+
+END
 
 ### B.사용자 정의 함수
 
+DECLARE
+
+EVENT
+
+BEGIN
+
+​	CONTROL
+
+​	SQL
+
+​	EXCEPTION
+
+​	RETURN ** 
+
+END
+
 ### B.DBMS 접속 기술
+
+user - Web Server - WAS - DBMS
+
+JDBC, ODBC, MyBatis - SQL을 XML에
+
+dynamic sql
 
 ### B.SQL 테스트
 
-### B.ORM
+DESCRIBE{DESC} [entity_name]
+
+SHOW 
+
+### B.ORM(Object Relational Mapping)
+
+Hibernate, JPA, EclipseLink, Datanucleus, Ebean, ODB, QxOrm, Django, SQLAlchemy, Storm, DatabaseObjects, Core Data, NHibernate, Dapper, Doctrine, Propel, RedBean
 
 ### C.쿼리 성능 최적화
+
+R(ule)BO - 개발자 역량 위주 vs C(ost)BO - 알고리즘 수준 위주
+
+EXPLAIN
 
 ## 데이터 전환
 
