@@ -923,21 +923,71 @@ win - set, linux - set, env, printenv
 
 ### A.소프트웨어 개발 방법론
 
+구조적, 정보공학(data), 객체지향, 컴포넌트, 애자일, 제품 계열
+
 ### A.비용 산정 기법
+
+프로젝트 요소: 제품 복잡도, 시스템 크기, 요구 신뢰도
+
+자원 요소: 인적 자원, 하드웨어 자원, 소프트웨어 자원
+
+생산성 요소: 개발자 능력, 개발 기간
 
 ### A.비용 산정 기법 - 하향식
 
+전문가 감정 기법 - 사내 전문가
+
+델파이 기법 - 다수 전문가
+
 ### A.비용 산정 기법 - 상향식
+
+LOC(source Line Of Code) (a+4m+b)/6
+
+개발 단계별 인월수(Effort Per Task)
 
 ### A.수학식 산정 기법
 
+#### COCOMO 모형{LOC}
+
+조직형(Organic) ~50000, 반분리형(Semi-detached) ~300000, 내장형(Embeded) ~~~
+
+기본형, 중간형, 발전형
+
+#### Putnam모형(생명 주기 예측 모형){LOC}
+
+Ratleigh-Norden 곡선
+
+SLIM
+
+#### 기능 점수(FP) 모형{FP}
+
+ESTIMACS
+
 ### C.소프트웨어 개발 방법론 결정
+
+일정 비용 인력 위험 품질
 
 ### B.소프트웨어 개발 표준
 
+ISO / IEC 12207 - 기본&지원&조직 생명 주기
+
+CMMI(Capability Maturity Model Integration) - 능력 성숙도 통합 모델
+
+초기 - 관리 - 정의 - 정량적 관리 - 최적화(Initial - Managed - Defined - Quantitatively Managed - Optimizing)
+
+SPICE(Software Process Improvement and Capability dEtermination) - 소프트웨어 처리 개선 및 능력 평가 기준
+
+고객-공급자 / 공학 / 지원 / 관리 / 조직
+
+불완전 - 수행 - 관리 - 확립 - 예측 - 최적화
+
 ### B.소프트웨어 개발 방법론 테일러링
 
+규모&복잡도, 구성원, 방법론 지원, 자동화
+
 ### B.소프트웨어 개발 프레임워크
+
+spring, 전자정부, 닥넷
 
 ## IT프로젝트 정보시스템 구축 관리
 
