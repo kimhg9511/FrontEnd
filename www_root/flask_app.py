@@ -12,13 +12,13 @@ def dashboard():
     return render_template('dashboard/html/index.html')
 
 
-@app.route('/dashboard')
-def dashboard():
+@app.route('/mogo')
+def mogo():
     return render_template('mogo/html/Mogo.html')
 
 
 @app.route('/storyboard')
-def dashboard():
+def storyboard():
     return render_template('storyboard/html/index0.html')
 
 
