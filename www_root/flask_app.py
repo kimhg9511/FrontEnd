@@ -9,17 +9,17 @@ def hello():
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template('dashboard/html/index.html')
+    return render_template('dashboard/index.html')
 
 
 @app.route('/mogo')
 def mogo():
-    return render_template('mogo/html/Mogo.html')
+    return render_template('mogo/Mogo.html')
 
 
 @app.route('/storyboard')
 def storyboard():
-    return render_template('storyboard/html/index0.html')
+    return render_template('storyboard/index0.html')
 
 
 if __name__ == '__main__':

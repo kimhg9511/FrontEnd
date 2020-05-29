@@ -374,7 +374,7 @@ header{
 .main-card{
     float: left;
     border-bottom: 2px solid #e1e1e1;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 .main-card.tiles{
     width: 210px;
@@ -532,5 +532,6 @@ header{
     bottom: 50px;
     right: 50px;
     z-index: 2000;
+    opacity: 0;
     transition: opacity 0.4s;
 }
